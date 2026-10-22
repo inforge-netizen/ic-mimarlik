@@ -1,0 +1,1322 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap");
+:root{--gold:#b68b63;--ink:#29251f;--navy:#29251f;--blue:#76624f;--paper:#f4f0e9;--muted:#766f66;--line:#d9d0c5;--white:#fffdf9;--radius:0;--shadow:0 28px 70px rgba(49,39,28,.12)}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px;background:var(--ink)}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;opacity:1;transition:opacity .25s;line-height:1.6}body.is-loading{opacity:0}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}img{display:block;max-width:100%}.ma-header{position:sticky;top:0;z-index:1000;display:flex;align-items:center;gap:28px;min-height:84px;padding:0 clamp(18px,5vw,76px);background:#101e2a;color:#fff;border-bottom:3px solid var(--gold)}.ma-logo{display:flex;align-items:center;gap:12px;min-width:max-content}.ma-logo>span{display:grid;place-items:center;width:43px;height:43px;background:var(--gold);color:#101e2a;font-family:"Barlow Condensed",sans-serif;font-size:21px;font-weight:800;letter-spacing:-1px}.ma-logo strong{font-family:"Barlow Condensed",sans-serif;font-size:20px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;max-width:200px;line-height:1.05}.ma-logo-image{filter:none}.ma-toggle{display:none;margin-left:auto;background:transparent;border:1px solid #476072;color:#fff;padding:8px 11px;font-size:22px}.ma-nav{display:flex;align-items:center;justify-content:center;gap:clamp(12px,2vw,30px);margin-left:auto}.ma-menu-item{position:relative;display:flex;align-items:center;gap:5px}.ma-menu-link{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#dce6ed;padding:32px 0;white-space:nowrap;transition:color .2s}.ma-menu-link:hover,.ma-menu-item:focus-within>.ma-menu-link{color:var(--gold)}.ma-submenu-toggle{border:0;background:transparent;color:#fff;padding:6px;cursor:pointer}.ma-submenu-toggle span{display:block;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}.ma-submenu{display:none;position:absolute;top:100%;left:-14px;min-width:220px;background:#132f44;border-top:3px solid var(--gold);box-shadow:var(--shadow);padding:8px 14px}.ma-menu-item:hover>.ma-submenu,.ma-menu-item:focus-within>.ma-submenu,.ma-menu-item.is-open>.ma-submenu{display:block}.ma-submenu .ma-menu-item{display:flex;flex-wrap:wrap}.ma-submenu .ma-menu-link{display:block;width:100%;padding:10px 0;font-size:11px}.ma-socials{display:flex;gap:10px}.ma-mobile-socials{display:none}.ma-socials a{width:27px;height:27px;display:grid;place-items:center;border:1px solid #456074;color:#fff}.ma-socials svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.6}.ma-header-actions{display:flex;align-items:center;gap:14px}.ma-language{position:relative}.ma-language-trigger{display:flex;align-items:center;gap:9px;background:transparent;border:1px solid #456074;color:#fff;padding:9px 10px;font-size:11px;font-weight:700}.ma-language-trigger i{width:6px;height:6px;border-right:1px solid;border-bottom:1px solid;transform:rotate(45deg);margin-top:-3px}.ma-language-menu{display:none;position:absolute;right:0;top:calc(100% + 7px);min-width:90px;background:#fff;box-shadow:var(--shadow);padding:6px;z-index:10}.ma-language.is-open .ma-language-menu{display:grid}.ma-language-option{padding:8px 10px;color:var(--ink);font-size:12px}.ma-language-option:hover,.ma-language-option.is-active{background:#eaf0f4;color:#101e2a}.ma-mobile-call{display:none}.ma-header-cta{display:inline-flex;align-items:center;gap:12px;padding:13px 16px;background:var(--gold);color:#101e2a;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}.ma-kicker{display:inline-flex;align-items:center;gap:12px;color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.ma-kicker:before{content:"";display:inline-block;width:27px;height:2px;background:currentColor}.ma-button{display:inline-flex;align-items:center;gap:25px;margin-top:20px;padding:16px 19px;background:var(--gold);color:#101e2a;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:0;cursor:pointer;transition:transform .2s,background .2s}.ma-button:hover{transform:translateY(-3px);background:#ff8a54}.ma-icon-arrow{width:23px;height:1px;background:currentColor;position:relative}.ma-icon-arrow:after{content:"";position:absolute;right:0;top:-4px;width:8px;height:8px;border-top:1px solid;border-right:1px solid;transform:rotate(45deg)}.ma-intro{display:grid;grid-template-columns:minmax(90px,18%) 1fr;gap:36px;padding:clamp(64px,9vw,130px) clamp(22px,9vw,140px);background:#fff}.ma-section-no{font-family:"Barlow Condensed",sans-serif;font-size:13px;letter-spacing:.12em;color:var(--gold);padding-top:10px}.ma-intro h2,.ma-section-head h2,.ma-infrastructure h2,.ma-contact-detail-head h2{margin:16px 0;font-family:"Barlow Condensed",sans-serif;font-size:clamp(38px,5.4vw,72px);font-weight:700;line-height:.98;letter-spacing:-.025em;text-transform:uppercase;max-width:930px}.ma-intro p,.ma-infrastructure-copy>p{max-width:760px;color:var(--muted);font-size:16px;line-height:1.9}.ma-infrastructure{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(35px,7vw,100px);padding:clamp(70px,9vw,130px) clamp(22px,8vw,120px);background:#e6edf1;position:relative;overflow:hidden}.ma-infrastructure:before{content:"A";position:absolute;right:-10px;top:-120px;font-family:"Barlow Condensed",sans-serif;font-size:430px;font-weight:800;line-height:1;color:rgba(12,27,42,.035);pointer-events:none}.ma-infrastructure-copy{position:relative;z-index:1}.ma-infrastructure-copy .ma-button{margin-top:22px}.ma-infrastructure-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;position:relative;z-index:1}.ma-infrastructure-grid article{min-height:205px;padding:23px;background:#fff;border-bottom:3px solid var(--gold);position:relative;box-shadow:0 10px 28px rgba(12,27,42,.04)}.ma-infrastructure-index{font-family:"Barlow Condensed",sans-serif;font-size:13px;font-weight:800;color:var(--gold);letter-spacing:.1em}.ma-infrastructure-grid h3{margin:16px 0 8px;font-family:"Barlow Condensed",sans-serif;font-size:24px;text-transform:uppercase;line-height:1.1}.ma-infrastructure-grid p{margin:0;color:var(--muted);font-size:13px;line-height:1.7}.ma-infrastructure-grid article>a{position:absolute;right:18px;top:18px;color:var(--gold);font-size:18px}.ma-services{padding:clamp(70px,9vw,125px) clamp(22px,8vw,120px);background:#101e2a;color:#fff}.ma-section-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:42px}.ma-section-head h2{max-width:650px;margin-bottom:0}.ma-service-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #355064;border-left:1px solid #355064}.ma-service-list article{min-height:220px;padding:25px 24px;border-right:1px solid #355064;border-bottom:1px solid #355064;position:relative;transition:background .25s}.ma-service-list article:hover{background:#15344a}.ma-service-list article>span{font-family:"Barlow Condensed",sans-serif;font-size:14px;color:var(--gold);letter-spacing:.12em}.ma-service-list h3{font-family:"Barlow Condensed",sans-serif;font-size:26px;text-transform:uppercase;line-height:1.05;margin:24px 0 10px}.ma-service-list p{font-size:13px;color:#b5c5d0;line-height:1.8;max-width:340px}.ma-service-arrow{position:absolute;right:22px;top:22px;width:19px;height:19px;border:1px solid #526b7b;border-radius:50%;display:block}.ma-service-arrow:after{content:"↗";position:absolute;inset:0;display:grid;place-items:center;color:var(--gold);font-size:12px}.ma-projects{padding:clamp(70px,9vw,125px) clamp(22px,8vw,120px);background:#f2f5f7}.ma-gallery{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(170px,.4fr);gap:14px}.ma-gallery-main{position:relative;display:block;min-height:470px;background:#cbd6de;overflow:hidden}.ma-gallery-main img{width:100%;height:100%;min-height:470px;object-fit:cover;transition:transform .6s}.ma-gallery-main:hover img{transform:scale(1.035)}.ma-gallery-caption{position:absolute;left:0;right:0;bottom:0;padding:50px 28px 26px;color:#fff;background:linear-gradient(0deg,rgba(5,18,29,.88),transparent)}.ma-gallery-caption span{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}.ma-gallery-caption h3{font-family:"Barlow Condensed",sans-serif;font-size:35px;text-transform:uppercase;margin:7px 0 0}.ma-thumbs{display:grid;grid-template-columns:1fr;gap:10px;max-height:490px;overflow:auto}.ma-thumb{padding:0;border:3px solid transparent;background:#d5dfe6;cursor:pointer;min-height:100px;overflow:hidden}.ma-thumb.is-active{border-color:var(--gold)}.ma-thumb img{width:100%;height:100%;min-height:100px;object-fit:cover;transition:transform .4s}.ma-thumb:hover img{transform:scale(1.04)}.ma-statement{padding:clamp(75px,10vw,150px) clamp(22px,10vw,160px);background:var(--gold);color:#101e2a}.ma-statement .ma-kicker{color:#101e2a}.ma-statement .ma-kicker:before{background:#101e2a}.ma-statement blockquote{margin:28px 0;max-width:1100px;font-family:"Barlow Condensed",sans-serif;font-size:clamp(38px,6vw,82px);font-weight:700;line-height:.99;letter-spacing:-.025em;text-transform:uppercase}.ma-statement p{max-width:760px;font-size:15px;line-height:1.8}.ma-new-projects{padding:clamp(70px,9vw,125px) clamp(22px,8vw,120px);background:#fff}.ma-new-projects-head{display:grid;grid-template-columns:1fr .65fr;gap:50px;align-items:end;margin-bottom:30px}.ma-new-projects-head h2{font-family:"Barlow Condensed",sans-serif;font-size:clamp(40px,5vw,68px);line-height:.95;text-transform:uppercase;margin:15px 0 0}.ma-new-projects-head h2 i{font-style:normal;color:var(--blue)}.ma-new-projects-head p{color:var(--muted);line-height:1.8}.ma-new-project-controls{display:flex;justify-content:flex-end;gap:8px;margin-bottom:14px}.ma-new-project-prev,.ma-new-project-next{width:40px;height:40px;background:var(--ink);color:#fff;border:0;font-size:19px;cursor:pointer}.ma-new-project-prev:hover,.ma-new-project-next:hover{background:var(--gold);color:var(--ink)}.ma-new-project-grid{display:grid;grid-auto-columns:minmax(270px,31%);grid-auto-flow:column;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--gold) #dfe5e9;padding-bottom:12px}.ma-new-project{scroll-snap-align:start;min-width:0;background:#e9eef1}.ma-new-project>a{display:block;height:100%}.ma-new-project-image{height:240px;overflow:hidden;background:#ccd7df}.ma-new-project-image img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.ma-new-project:hover img{transform:scale(1.05)}.ma-new-project-overlay{display:flex;justify-content:space-between;align-items:center;padding:14px 17px;background:#101e2a;color:#fff}.ma-project-status{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--gold)}.ma-project-arrow{font-size:20px}.ma-new-project-info{padding:16px 18px 22px}.ma-new-project-info>span{font-size:10px;color:var(--blue);font-weight:800;letter-spacing:.1em}.ma-new-project-info h3{font-family:"Barlow Condensed",sans-serif;font-size:25px;text-transform:uppercase;line-height:1.1;margin:8px 0}.ma-new-project-info p{font-size:12px;color:var(--muted);line-height:1.75}.ma-new-projects-footer{display:flex;justify-content:space-between;gap:20px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--muted)}.ma-text-link{color:var(--ink)}.ma-text-link b{color:var(--gold);margin-left:10px}.ma-contact-detail{padding:clamp(70px,9vw,125px) clamp(22px,8vw,120px);background:#e6edf1}.ma-contact-detail-head{max-width:850px;margin-bottom:40px}.ma-contact-detail-head>p{max-width:680px;color:var(--muted);line-height:1.8}.ma-contact-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}.ma-contact-form{background:#fff;padding:clamp(22px,3vw,40px);box-shadow:var(--shadow)}.ma-contact-form label{display:block;font-size:12px;font-weight:700;color:#314352;margin-bottom:14px}.ma-form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.ma-contact-form input,.ma-contact-form textarea,.ma-contact-form select{display:block;width:100%;margin-top:7px;padding:13px;border:1px solid #d7e0e6;background:#f8fafb;color:var(--ink);outline:none;border-radius:0}.ma-contact-form input:focus,.ma-contact-form textarea:focus,.ma-contact-form select:focus{border-color:var(--gold)}.ma-contact-form textarea{resize:vertical}.ma-form-submit{margin-top:5px}.ma-map-wrap{display:flex;flex-direction:column;min-height:480px;background:#101e2a;color:#fff}.ma-map-head{padding:22px 24px;display:grid;gap:8px}.ma-map-head strong{font-size:14px;color:#d0dbe3}.ma-map-wrap iframe{border:0;width:100%;flex:1;min-height:330px;filter:saturate(.65)}.ma-footer{padding:60px clamp(22px,8vw,120px) 35px;background:#071521;color:#fff;border-top:4px solid var(--gold)}.ma-footer-brand{display:flex;align-items:end;justify-content:space-between;gap:30px;padding-bottom:35px;border-bottom:1px solid #2b4151}.ma-footer-brand h2{font-family:"Barlow Condensed",sans-serif;font-size:clamp(28px,4vw,49px);line-height:1;text-transform:uppercase;max-width:650px;margin:10px 0 0}.ma-footer-columns{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:35px 0}.ma-footer-label{display:block;font-size:10px;letter-spacing:.16em;font-weight:800;color:var(--gold);margin-bottom:15px}.ma-footer-contact>a,.ma-footer-contact p{display:block;color:#d4dee5;font-size:14px;margin:0 0 9px}.ma-footer-socials{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px}.ma-footer-socials a{color:#fff;font-size:12px}.ma-footer-sitemap nav{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ma-footer-sitemap a{color:#d4dee5;font-size:13px}.ma-footer-sitemap a:hover,.ma-footer-socials a:hover{color:var(--gold)}.ma-copy{display:block;width:100%;box-sizing:border-box;padding:22px 16px 18px;border-top:1px solid #2b4151;color:#fff;font-size:12px;text-align:center;background:#101e2a;line-height:1.6}.ma-copy a{color:#fff!important;text-decoration:underline;text-underline-offset:3px;font-weight:700}.ma-back-top{position:fixed;right:20px;bottom:20px;width:44px;height:44px;display:grid;place-items:center;background:var(--gold);color:var(--ink);z-index:100}.ma-back-top svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}.ma-whatsapp{position:fixed;left:20px;bottom:20px;width:54px;height:54px;display:grid;place-items:center;border-radius:50%;background:#20c66b;color:#fff;z-index:100;box-shadow:0 10px 25px #101e2a35}.ma-whatsapp svg{width:28px;height:28px;fill:currentColor}.ma-reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.ma-reveal.is-visible{opacity:1;transform:none}.ma-page{padding:80px 8vw;min-height:55vh;background:#fff}.ma-page h1{font:700 clamp(42px,6vw,76px)/.98 "Barlow Condensed",sans-serif;text-transform:uppercase}.ma-page-content{max-width:900px;color:var(--muted);line-height:1.9}.ma-not-found{padding:130px 8vw;text-align:center;background:#fff}.ma-not-found h1{font:800 100px "Barlow Condensed",sans-serif;color:var(--gold)}
+@media(max-width:1120px){.ma-header{gap:16px;padding:0 20px}.ma-nav{gap:12px}.ma-menu-link{font-size:10px}.ma-socials{display:none}.ma-header-cta{padding:12px}.ma-logo strong{font-size:17px}}
+@media(max-width:900px){.ma-header{min-height:74px}.ma-toggle{display:block;order:4;margin-left:6px}.ma-header-actions{margin-left:auto;gap:8px}.ma-mobile-socials{display:flex;gap:10px;flex:0 0 auto}.ma-nav{display:none;position:absolute;top:100%;left:0;right:0;margin:0;padding:12px 22px 22px;background:#101e2a;border-top:1px solid #30495b;align-items:stretch;max-height:calc(100vh - 74px);overflow:auto;flex-direction:column;gap:0}.ma-header.is-open .ma-nav{display:flex}.ma-menu-item{flex-wrap:wrap;border-bottom:1px solid #243e50}.ma-menu-link{padding:14px 0;font-size:12px;flex:1}.ma-submenu-toggle{padding:14px}.ma-submenu{position:static;display:none;box-shadow:none;border-top:1px solid #30495b;flex-basis:100%;background:#10283a;padding:4px 14px}.ma-menu-item.is-open>.ma-submenu{display:block}.ma-header-cta{display:none}.ma-mobile-call{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex:0 0 auto;width:43px;height:43px;border:2px solid #ff8a54;border-radius:50%;background:var(--gold);color:#101e2a;box-shadow:0 0 0 3px rgba(255,107,44,.18);transition:transform .2s,box-shadow .2s}.ma-mobile-call:active{transform:scale(.94)}.ma-mobile-call svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ma-call-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.ma-intro{grid-template-columns:1fr;gap:10px;padding:70px 25px}.ma-infrastructure{grid-template-columns:1fr;padding:70px 25px}.ma-service-list{grid-template-columns:repeat(2,minmax(0,1fr))}.ma-services,.ma-projects,.ma-new-projects,.ma-contact-detail{padding:70px 25px}.ma-gallery{grid-template-columns:1fr}.ma-gallery-main,.ma-gallery-main img{min-height:380px}.ma-thumbs{grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-flow:row;max-height:none}.ma-thumb,.ma-thumb img{min-height:85px}.ma-new-projects-head{grid-template-columns:1fr;gap:15px}.ma-contact-detail-grid{grid-template-columns:1fr}.ma-map-wrap{min-height:420px}.ma-footer{padding:50px 25px 28px}.ma-footer-brand{display:block}.ma-footer-columns{grid-template-columns:1fr;gap:25px}}
+@media(max-width:560px){.ma-header{padding:0 14px;gap:10px}.ma-logo>span{width:36px;height:36px}.ma-logo strong{font-size:13px;max-width:112px}.ma-header-actions{gap:8px;margin-left:auto}.ma-mobile-socials{display:flex;gap:10px;flex:0 0 auto}.ma-mobile-socials a{width:22px;height:26px}.ma-mobile-socials svg{width:12px;height:12px}.ma-language-trigger{padding:6px;gap:5px}.ma-mobile-call{width:42px;height:42px;margin-right:2px}.ma-mobile-call svg{width:22px;height:22px}.ma-toggle{padding:6px 7px;margin-left:6px}.ma-infrastructure-grid{grid-template-columns:1fr}.ma-infrastructure-grid article{min-height:165px}.ma-service-list{grid-template-columns:1fr}.ma-service-list article{min-height:180px}.ma-section-head{display:block}.ma-section-head h2{margin-top:16px}.ma-gallery-main,.ma-gallery-main img{min-height:310px}.ma-thumbs{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.ma-thumb,.ma-thumb img{min-height:72px}.ma-statement{padding:75px 24px}.ma-statement blockquote{font-size:42px}.ma-new-project-grid{grid-auto-columns:83%}.ma-new-projects-footer{display:grid}.ma-form-row{grid-template-columns:1fr;gap:0}.ma-contact-form{padding:22px 17px}.ma-footer-sitemap nav{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.ma-reveal{opacity:1;transform:none}}
+
+/* v2.76.27: removed inherited graphite/safety-amber overrides.
+   Interior Architecture uses its own warm stone, oak and bronze palette below. */
+:root{--ma-accent:#b68b63}
+
+
+.ma-floating-call{display:none}
+@media(max-width:900px){.ma-header-actions .ma-mobile-call{display:none!important}.ma-floating-call{position:fixed!important;left:20px!important;right:auto!important;bottom:84px!important;z-index:1100!important;display:flex!important;align-items:center!important;justify-content:center!important;width:54px!important;height:54px!important;margin:0!important;padding:0!important;border:1px solid rgba(255,255,255,.28)!important;border-radius:50%!important;background:var(--gold)!important;color:var(--ink)!important;box-shadow:0 10px 25px rgba(12,27,42,.22)!important}.ma-floating-call svg{width:24px!important;height:24px!important;fill:none!important;stroke:currentColor!important;stroke-width:2!important;stroke-linecap:round!important;stroke-linejoin:round!important}.ma-whatsapp{left:20px!important;right:auto!important;bottom:20px!important;width:54px!important;height:54px!important}.ma-whatsapp svg{width:28px!important;height:28px!important}}
+
+
+/*
+ * v2.76.25 — MOBILE REVEAL VISIBILITY SAFEGUARD (SK STUDIO STANDARD)
+ * Symptom: on mobile, a section reached from the menu can remain hidden until the
+ * visitor scrolls manually. .ma-reveal starts at opacity:0 and relies on JS/scroll
+ * observation to add .is-visible; this mobile fallback keeps content readable even
+ * if that reveal trigger does not run immediately. Keep this safeguard in this theme
+ * stylesheet when updating it, and test menu-to-section navigation plus manual scroll.
+ * Applies only to this theme; do not copy into unrelated themes without checking scope.
+ */
+@media (max-width: 900px) {
+  .ma-reveal { opacity: 1 !important; transform: none !important; }
+}
+
+
+/* v2.76.26 — İç Mimarlık & Dekorasyon: özgün editoryal tasarım katmanı.
+   Mobil menüyle hedef bölüme gidildiğinde reveal öğeleri gizli kalmamalıdır. */
+:root{--gold:#b68b63;--ink:#29251f;--navy:#29251f;--blue:#76624f;--paper:#f4f0e9;--muted:#766f66;--line:#d9d0c5;--white:#fffdf9;--radius:0;--shadow:0 28px 70px rgba(49,39,28,.12)}
+html{background:var(--paper);scroll-padding-top:100px}
+body{background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
+.ma-header{background:rgba(248,245,239,.97);color:var(--ink);border-bottom:1px solid var(--line);min-height:88px;backdrop-filter:blur(14px)}
+.ma-logo>span{background:var(--ink);color:#f4f0e9;width:46px;height:46px;font-family:Georgia,serif;font-size:22px}
+.ma-logo strong{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.04em;font-weight:600}
+.ma-nav a{color:var(--ink);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.ma-nav a:hover,.ma-nav a:focus{color:var(--gold)}
+.ma-button{background:var(--ink);color:#fffdf9;border:1px solid var(--ink);border-radius:0;letter-spacing:.07em;text-transform:uppercase;font-size:11px}
+.ma-button:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+
+
+
+
+
+.ma-kicker{font-size:10px;letter-spacing:.19em;font-weight:700}
+.ma-intro{background:#f4f0e9;padding:clamp(64px,10vw,150px) clamp(22px,8vw,120px);grid-template-columns:minmax(70px,.35fr) 1.65fr;gap:5vw}
+.ma-intro h2,.ma-infrastructure h2,.ma-section-head h2,.ma-contact-detail h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.045em;line-height:1.08}
+.ma-intro h2{font-size:clamp(32px,4.5vw,64px);max-width:920px}
+.ma-intro p,.ma-infrastructure p,.ma-contact-detail p{color:var(--muted);max-width:720px}
+.ma-section-no{color:var(--gold);font-family:Georgia,serif;font-size:20px}
+.ma-infrastructure{background:#e9e1d6;padding:clamp(60px,9vw,130px) clamp(22px,8vw,120px);gap:7vw}
+.ma-infrastructure-copy{max-width:560px}
+.ma-infrastructure h2{font-size:clamp(38px,5vw,70px)}
+.ma-infrastructure-grid{gap:1px;background:#d3c8ba}
+.ma-infrastructure-card{background:#f4f0e9;padding:30px;min-height:180px}
+.ma-infrastructure-card h3,.ma-service-card h3{font-family:Georgia,serif;font-weight:400;font-size:25px}
+.ma-services{background:#29251f;color:#f4f0e9;padding:clamp(60px,9vw,130px) clamp(22px,8vw,120px)}
+.ma-section-head{max-width:780px;margin-bottom:52px}
+.ma-section-head h2{font-size:clamp(40px,5.8vw,76px)}
+.ma-service-grid{gap:0;border-top:1px solid rgba(244,240,233,.25)}
+.ma-service-card{background:transparent;border:0;border-bottom:1px solid rgba(244,240,233,.25);padding:27px 10px;display:grid;grid-template-columns:70px minmax(180px,.8fr) 1.2fr;gap:20px;align-items:start}
+.ma-service-card .ma-service-number{color:#d7b08b;font-family:Georgia,serif;font-size:20px}
+.ma-service-card h3{margin:0;color:#fffdf9}
+.ma-service-card p{margin:0;color:#c7bfb4}
+.ma-projects{padding:clamp(60px,9vw,130px) clamp(22px,8vw,120px);background:#f4f0e9}
+.ma-project-grid{gap:18px}
+.ma-project-card{border-radius:0;background:#e9e1d6}
+.ma-project-card img{aspect-ratio:4/5;object-fit:cover;transition:transform .8s}
+.ma-project-card:hover img{transform:scale(1.035)}
+.ma-statement{background:#d7b08b;color:#29251f;padding:clamp(60px,10vw,150px) clamp(22px,12vw,180px)}
+.ma-statement blockquote{font-family:Georgia,serif;font-size:clamp(30px,4.7vw,64px);font-weight:400;letter-spacing:-.035em;line-height:1.13}
+.ma-new-projects{background:#e9e1d6;padding:clamp(60px,9vw,130px) clamp(22px,8vw,120px)}
+.ma-new-projects-head h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(40px,5vw,70px)}
+.ma-contact-detail{background:#f4f0e9;padding:clamp(60px,9vw,130px) clamp(22px,8vw,120px)}
+.ma-contact-detail h2{font-size:clamp(40px,5vw,70px)}
+.ma-contact-form input,.ma-contact-form textarea,.ma-contact-form select{background:transparent;border:0;border-bottom:1px solid #bfb3a5;border-radius:0;padding:15px 2px}
+.ma-footer{background:#29251f;color:#f4f0e9;border-top:5px solid #b68b63}
+.ma-footer a{color:#d7b08b}
+.ma-floating-phone,.ma-whatsapp{border-radius:0}
+@media(max-width:900px){
+  html{scroll-padding-top:82px}
+  .ma-header{min-height:74px;padding:0 18px}
+  .ma-nav{background:#f4f0e9;color:#29251f}
+  .ma-nav a{color:#29251f}
+  
+  
+  .ma-intro{grid-template-columns:1fr;gap:16px;padding:64px 22px}
+  .ma-infrastructure,.ma-services,.ma-projects,.ma-new-projects,.ma-contact-detail{padding:64px 22px}
+  .ma-service-card{grid-template-columns:38px 1fr;gap:12px;padding:23px 0}
+  .ma-service-card p{grid-column:2}
+  .ma-section-head{margin-bottom:30px}
+  .ma-reveal{opacity:1!important;transform:none!important;visibility:visible!important}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ma-reveal{opacity:1!important;transform:none!important;visibility:visible!important}*{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+/* v2.76.27 — Interior Architecture palette isolation + readable header controls.
+   Keep these overrides in this theme stylesheet; do not copy Marangoz color tokens here. */
+.ma-header .ma-socials a{border-color:#d9d0c5!important;color:#5b4a3b!important;background:rgba(255,253,249,.72)!important}
+.ma-header .ma-socials a:hover,.ma-header .ma-socials a:focus-visible{border-color:#b68b63!important;background:#e9e1d6!important;color:#29251f!important}
+.ma-header .ma-language-trigger{border-color:#d9d0c5!important;color:#29251f!important;background:rgba(255,253,249,.72)!important}
+.ma-header .ma-language-trigger:hover,.ma-header .ma-language-trigger:focus-visible,.ma-header .ma-language.is-open .ma-language-trigger{border-color:#b68b63!important;color:#29251f!important;outline-color:#b68b63!important}
+.ma-header .ma-language-trigger i{border-color:currentColor!important}
+.ma-header .ma-language-menu{background:#fffdf9!important;border:1px solid #d9d0c5!important}
+.ma-header .ma-language-option{color:#29251f!important}
+.ma-header .ma-language-option:hover,.ma-header .ma-language-option.is-active{background:#e9e1d6!important;color:#29251f!important}
+.ma-header .ma-nav{background:rgba(248,245,239,.97);color:#29251f}
+.ma-header .ma-nav .ma-menu-link{color:#29251f}
+.ma-header .ma-nav .ma-menu-link:hover,.ma-header .ma-nav .ma-menu-item:focus-within>.ma-menu-link{color:#8f6848}
+.ma-header .ma-submenu{background:#fffdf9;border-top-color:#b68b63}
+.ma-header .ma-submenu .ma-menu-link{color:#29251f}
+.ma-header .ma-header-cta{background:#b68b63!important;color:#fffdf9!important}
+.ma-header .ma-header-cta:hover{background:#8f6848!important;color:#fffdf9!important}
+@media(max-width:900px){
+  .ma-header .ma-mobile-socials{display:flex!important;gap:8px;align-items:center}
+  .ma-header .ma-mobile-socials a{width:28px;height:28px}
+  .ma-header .ma-language-trigger{padding:8px 9px}
+  .ma-header .ma-nav{background:#f4f0e9!important;border-top:1px solid #d9d0c5}
+  .ma-header .ma-nav .ma-menu-link{color:#29251f!important}
+  .ma-header .ma-submenu{background:#fffdf9!important}
+}
+
+
+
+/* v2.76.28 — İç Mimarlık & Dekorasyon / Stil A: minimal lüks header.
+   Scope intentionally limited to this theme. Keep the light stone palette, left logo,
+   inline navigation, outlined CTA and sticky top bar. */
+.ma-header{
+  position:sticky!important;top:0!important;z-index:1200!important;
+  display:flex;align-items:center;gap:clamp(14px,2vw,30px);
+  min-height:86px;padding:12px clamp(18px,5vw,76px)!important;
+  background:rgba(248,245,239,.97)!important;color:#29251f!important;
+  border-bottom:1px solid #d9d0c5!important;box-shadow:0 8px 28px rgba(41,37,31,.045);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+}
+.ma-header .ma-logo{order:0;flex:0 0 auto;gap:12px;max-width:31%;}
+.ma-header .ma-logo>span{background:#29251f!important;color:#f4f0e9!important;border:1px solid #b68b63;}
+.ma-header .ma-logo strong{color:#29251f!important;font-family:Georgia,"Times New Roman",serif;font-size:clamp(15px,1.25vw,19px);font-weight:500;letter-spacing:-.035em;text-transform:none;max-width:230px;}
+.ma-header .ma-nav{order:1;flex:1 1 auto;margin-left:auto;justify-content:center;gap:clamp(10px,1.65vw,25px);background:transparent!important;}
+.ma-header .ma-nav .ma-menu-link{padding:18px 0;color:#29251f!important;font-size:11px;font-weight:500;letter-spacing:.075em;}
+.ma-header .ma-nav .ma-menu-link:hover,.ma-header .ma-nav .ma-menu-item:focus-within>.ma-menu-link{color:#8f6848!important;}
+.ma-header .ma-submenu-toggle{color:#29251f!important;}
+.ma-header .ma-submenu{background:#fffdf9!important;border-top:2px solid #b68b63!important;box-shadow:0 18px 40px rgba(41,37,31,.12);}
+.ma-header .ma-socials a{border:1px solid #d9d0c5!important;border-radius:50%;background:rgba(255,253,249,.65)!important;color:#5b4a3b!important;transition:background .2s,border-color .2s,color .2s;}
+.ma-header .ma-socials a:hover,.ma-header .ma-socials a:focus-visible{border-color:#b68b63!important;background:#e9e1d6!important;color:#29251f!important;}
+.ma-header .ma-header-actions{order:2;flex:0 0 auto;gap:clamp(8px,1vw,14px);}
+.ma-header .ma-language-trigger{border:1px solid #d9d0c5!important;border-radius:0;background:transparent!important;color:#29251f!important;}
+.ma-header .ma-language-menu{background:#fffdf9!important;border:1px solid #d9d0c5!important;}
+.ma-header .ma-language-option{color:#29251f!important;}
+.ma-header .ma-language-option:hover,.ma-header .ma-language-option.is-active{background:#e9e1d6!important;color:#29251f!important;}
+.ma-header .ma-header-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  padding:12px 16px!important;border:1px solid #8f6848!important;border-radius:0!important;
+  background:transparent!important;color:#29251f!important;font-size:10px;font-weight:600;
+  letter-spacing:.085em;text-transform:uppercase;transition:background .2s,color .2s,border-color .2s;}
+.ma-header .ma-header-cta:hover,.ma-header .ma-header-cta:focus-visible{background:#29251f!important;border-color:#29251f!important;color:#fffdf9!important;}
+.ma-header .ma-toggle{border:1px solid #d9d0c5!important;color:#29251f!important;background:transparent!important;}
+@media(max-width:1100px) and (min-width:901px){
+  .ma-header{gap:14px;padding-left:22px!important;padding-right:22px!important;}
+  .ma-header .ma-logo{max-width:25%;}
+  .ma-header .ma-nav{gap:11px;}
+  .ma-header .ma-nav .ma-menu-link{font-size:10px;letter-spacing:.04em;}
+  .ma-header .ma-header-actions{gap:8px;}
+  .ma-header .ma-header-cta{padding:10px 11px!important;font-size:9px;}
+}
+@media(max-width:900px){
+  html{scroll-padding-top:78px!important;}
+  .ma-header{min-height:74px!important;padding:10px 18px!important;gap:10px;}
+  .ma-header .ma-logo{max-width:calc(100% - 54px);min-width:0;}
+  .ma-header .ma-logo strong{font-size:15px;max-width:190px;}
+  .ma-header .ma-logo-image{max-width:94px!important;max-height:42px!important;}
+  .ma-header .ma-toggle{display:block;margin-left:auto;flex:0 0 auto;}
+  .ma-header .ma-nav{position:absolute;left:0;right:0;top:100%;display:none;max-height:calc(100vh - 74px);overflow-y:auto;margin:0;padding:12px 22px 18px!important;background:#f4f0e9!important;border-top:1px solid #d9d0c5!important;box-shadow:0 18px 30px rgba(41,37,31,.1);}
+  .ma-header.is-open .ma-nav{display:flex;flex-direction:column;align-items:stretch;gap:0;}
+  .ma-header .ma-nav .ma-menu-item{display:flex;flex-wrap:wrap;align-items:center;}
+  .ma-header .ma-nav .ma-menu-link{padding:12px 0!important;color:#29251f!important;white-space:normal;}
+  .ma-header .ma-nav .ma-submenu{position:static;display:none;flex:0 0 100%;min-width:0;margin:0 0 8px 12px;padding:4px 12px;box-shadow:none;border-top:0;border-left:2px solid #b68b63!important;}
+  .ma-header .ma-nav .ma-menu-item.is-submenu-open>.ma-submenu{display:block;}
+  .ma-header .ma-header-actions{display:flex;align-items:center;gap:8px;}
+  .ma-header .ma-header-actions .ma-mobile-call{display:none!important;}
+  .ma-header .ma-header-actions .ma-language-trigger{padding:8px 9px;font-size:10px;}
+  .ma-header .ma-header-actions .ma-header-cta{padding:9px 10px!important;font-size:9px;letter-spacing:.03em;}
+  .ma-header .ma-header-actions .ma-header-cta span{display:none;}
+  .ma-header .ma-mobile-socials{display:flex!important;gap:6px;align-items:center;}
+  .ma-header .ma-mobile-socials a{width:27px;height:27px;}
+}
+@media(max-width:520px){
+  .ma-header{padding-left:12px!important;padding-right:12px!important;gap:7px;}
+  .ma-header .ma-logo{gap:7px;max-width:calc(100% - 44px);}
+  .ma-header .ma-logo strong{font-size:13px;max-width:126px;}
+  .ma-header .ma-logo-image{max-width:70px!important;max-height:38px!important;}
+  .ma-header .ma-logo>span{width:36px;height:36px;font-size:18px;}
+  .ma-header .ma-toggle{padding:6px 8px;font-size:20px;}
+  .ma-header .ma-header-actions{gap:5px;}
+  .ma-header .ma-header-actions .ma-header-cta{padding:8px 8px!important;font-size:8px;}
+  .ma-header .ma-header-actions .ma-language-trigger{padding:7px 7px;font-size:9px;}
+}
+
+
+/* v2.76.29 — Ultra-luxury architectural menu (Interior Architecture only).
+   Direction: dark honed-stone navigation capsule, champagne hairlines and editorial spacing.
+   Mobile retains the existing menu/submenu JavaScript hooks and becomes a light drawer. */
+.ma-header{
+  min-height:92px!important;
+  padding:13px clamp(18px,4.2vw,64px)!important;
+  gap:clamp(12px,1.6vw,25px)!important;
+  background:rgba(247,244,238,.97)!important;
+  border-bottom:1px solid #d8cfc2!important;
+  box-shadow:0 10px 34px rgba(38,32,26,.055)!important;
+}
+.ma-header .ma-logo{gap:11px!important;max-width:27%;}
+.ma-header .ma-logo>span{
+  background:#292720!important;color:#f7f2e9!important;border:1px solid #b99a72!important;
+  box-shadow:inset 0 0 0 3px rgba(185,154,114,.12);
+}
+.ma-header .ma-logo strong{
+  color:#292720!important;font-family:Georgia,"Times New Roman",serif!important;
+  font-weight:500!important;letter-spacing:-.045em!important;font-size:clamp(15px,1.2vw,19px)!important;
+}
+.ma-header .ma-nav{
+  position:relative;flex:0 1 auto!important;justify-content:center!important;align-items:center!important;
+  gap:clamp(1px,.3vw,5px)!important;margin:0 auto!important;padding:5px!important;
+  border:1px solid rgba(220,201,171,.3)!important;border-radius:3px!important;
+  background:#292720!important;box-shadow:0 7px 18px rgba(37,32,26,.12),inset 0 1px rgba(255,255,255,.045)!important;
+}
+.ma-header .ma-nav:before{content:"";position:absolute;left:10px;right:10px;top:2px;height:1px;background:linear-gradient(90deg,transparent,rgba(199,169,128,.42),transparent);pointer-events:none;}
+.ma-header .ma-nav .ma-menu-item{position:relative;}
+.ma-header .ma-nav .ma-menu-link{
+  display:flex!important;align-items:center;min-height:39px!important;padding:11px clamp(9px,1vw,16px)!important;
+  color:#f4eee4!important;font-size:10px!important;font-weight:500!important;letter-spacing:.105em!important;
+  text-transform:uppercase!important;white-space:nowrap!important;transition:color .2s ease,background .2s ease!important;
+}
+.ma-header .ma-nav .ma-menu-link:after{
+  content:"";position:absolute;left:clamp(9px,1vw,16px);right:clamp(9px,1vw,16px);bottom:5px;height:1px;
+  background:#c5a57c;transform:scaleX(0);transform-origin:left;transition:transform .22s ease;
+}
+.ma-header .ma-nav .ma-menu-link:hover:after,
+.ma-header .ma-nav .ma-menu-item:focus-within>.ma-menu-link:after{transform:scaleX(1);}
+.ma-header .ma-nav .ma-menu-link:hover,
+.ma-header .ma-nav .ma-menu-item:focus-within>.ma-menu-link{color:#d8bd99!important;background:rgba(255,255,255,.035)!important;}
+.ma-header .ma-nav .ma-submenu-toggle{color:#d7bd98!important;}
+.ma-header .ma-nav .ma-submenu{
+  top:calc(100% + 7px)!important;min-width:230px!important;padding:9px!important;
+  background:#292720!important;border:1px solid rgba(197,165,124,.48)!important;border-top:2px solid #c5a57c!important;
+  box-shadow:0 20px 42px rgba(30,26,21,.2)!important;border-radius:2px!important;
+}
+.ma-header .ma-nav .ma-submenu .ma-menu-link{
+  min-height:0!important;padding:12px 13px!important;color:#f4eee4!important;font-size:10px!important;
+  letter-spacing:.075em!important;border-bottom:1px solid rgba(255,255,255,.075)!important;
+}
+.ma-header .ma-nav .ma-submenu .ma-menu-item:last-child>.ma-menu-link{border-bottom:0!important;}
+.ma-header .ma-nav .ma-submenu .ma-menu-link:after{display:none!important;}
+.ma-header .ma-nav .ma-submenu .ma-menu-link:hover{background:rgba(197,165,124,.12)!important;color:#dfc6a4!important;}
+.ma-header .ma-socials a{border-color:#d5c9b8!important;background:transparent!important;color:#61503d!important;}
+.ma-header .ma-socials a:hover,.ma-header .ma-socials a:focus-visible{border-color:#b99a72!important;background:#e9e0d3!important;color:#292720!important;}
+.ma-header .ma-language-trigger{border-color:#d5c9b8!important;color:#292720!important;background:transparent!important;}
+.ma-header .ma-language-trigger:hover,.ma-header .ma-language-trigger:focus-visible,.ma-header .ma-language.is-open .ma-language-trigger{border-color:#b99a72!important;color:#7d5c38!important;}
+.ma-header .ma-header-cta{
+  position:relative;gap:13px!important;padding:13px 15px!important;border:1px solid #92744f!important;
+  color:#292720!important;background:transparent!important;border-radius:0!important;font-size:9px!important;
+  letter-spacing:.13em!important;font-weight:600!important;white-space:nowrap;transition:all .25s ease!important;
+}
+.ma-header .ma-header-cta:after{content:"↗";font-size:14px;line-height:1;color:#92744f;transition:transform .25s ease,color .25s ease;}
+.ma-header .ma-header-cta:hover,.ma-header .ma-header-cta:focus-visible{background:#292720!important;border-color:#292720!important;color:#f7f2e9!important;}
+.ma-header .ma-header-cta:hover:after,.ma-header .ma-header-cta:focus-visible:after{transform:translate(2px,-2px);color:#d7bd98;}
+.ma-header .ma-toggle{border-color:#d5c9b8!important;color:#292720!important;background:transparent!important;border-radius:0!important;}
+@media(max-width:1250px) and (min-width:901px){
+  .ma-header{gap:10px!important;padding-left:18px!important;padding-right:18px!important;}
+  .ma-header .ma-logo{max-width:22%;gap:8px!important;}
+  .ma-header .ma-logo strong{font-size:14px!important;}
+  .ma-header .ma-nav{gap:0!important;padding:4px!important;}
+  .ma-header .ma-nav .ma-menu-link{padding:10px 8px!important;font-size:9px!important;letter-spacing:.065em!important;}
+  .ma-header .ma-header-cta{padding:11px 10px!important;gap:7px!important;font-size:8px!important;letter-spacing:.08em!important;}
+}
+@media(max-width:900px){
+  .ma-header{min-height:74px!important;padding:10px 18px!important;gap:10px!important;}
+  .ma-header .ma-nav{
+    position:absolute!important;left:0!important;right:0!important;top:100%!important;display:none;
+    max-height:calc(100vh - 74px)!important;overflow-y:auto!important;margin:0!important;padding:12px 20px 20px!important;
+    align-items:stretch!important;gap:0!important;border:0!important;border-top:1px solid #c9b79f!important;
+    border-radius:0!important;background:#f5f1e9!important;box-shadow:0 20px 34px rgba(38,32,26,.14)!important;
+  }
+  .ma-header .ma-nav:before{display:none!important;}
+  .ma-header.is-open .ma-nav{display:flex!important;flex-direction:column!important;}
+  .ma-header .ma-nav .ma-menu-item{display:flex!important;flex-wrap:wrap!important;align-items:center!important;border-bottom:1px solid #ded5c8!important;}
+  .ma-header .ma-nav .ma-menu-link{flex:1 1 auto!important;min-height:0!important;padding:15px 3px!important;color:#292720!important;font-size:11px!important;letter-spacing:.11em!important;white-space:normal!important;background:transparent!important;}
+  .ma-header .ma-nav .ma-menu-link:after{display:none!important;}
+  .ma-header .ma-nav .ma-menu-link:hover,.ma-header .ma-nav .ma-menu-item:focus-within>.ma-menu-link{color:#8d6a43!important;background:transparent!important;}
+  .ma-header .ma-nav .ma-submenu-toggle{color:#8d6a43!important;}
+  .ma-header .ma-nav .ma-submenu{position:static!important;display:none;flex:0 0 100%!important;min-width:0!important;margin:0 0 10px 8px!important;padding:4px 10px!important;background:#ece5da!important;border:0!important;border-left:2px solid #b99a72!important;box-shadow:none!important;}
+  .ma-header .ma-nav .ma-menu-item.is-submenu-open>.ma-submenu{display:block!important;}
+  .ma-header .ma-nav .ma-submenu .ma-menu-link{padding:11px 10px!important;color:#39332b!important;border-bottom:1px solid rgba(41,39,32,.1)!important;font-size:10px!important;}
+  .ma-header .ma-header-actions .ma-header-cta{padding:9px 10px!important;font-size:8px!important;gap:5px!important;letter-spacing:.04em!important;}
+  .ma-header .ma-header-actions .ma-header-cta:after{font-size:12px;}
+}
+@media(max-width:520px){
+  .ma-header{padding-left:12px!important;padding-right:12px!important;gap:7px!important;}
+  .ma-header .ma-header-actions .ma-header-cta{padding:8px 7px!important;font-size:7px!important;gap:3px!important;}
+  .ma-header .ma-header-actions .ma-header-cta:after{font-size:10px;}
+}
+
+
+/* v2.76.30 — editorial two-tier header inspired by The Cool Hunter's category-led navigation.
+   Scoped to the İç Mimarlık & Dekorasyon theme; preserves existing menu markup and behavior. */
+@media (min-width:901px){
+  .ma-header{
+    display:grid!important;
+    grid-template-columns:minmax(190px,1fr) auto minmax(190px,1fr)!important;
+    grid-template-rows:auto auto!important;
+    align-items:center!important;
+    column-gap:clamp(18px,2.5vw,42px)!important;
+    row-gap:0!important;
+    min-height:0!important;
+    padding:0 clamp(22px,5vw,78px)!important;
+    background:#f8f6f1!important;
+    color:#24231f!important;
+    border-bottom:1px solid #d9d1c5!important;
+    box-shadow:0 5px 22px rgba(36,31,24,.045)!important;
+  }
+  .ma-header .ma-logo{
+    grid-column:1!important;grid-row:1!important;align-self:center!important;
+    min-height:82px!important;max-width:100%!important;gap:13px!important;
+    color:#24231f!important;text-decoration:none!important;
+  }
+  .ma-header .ma-logo>span{
+    width:42px!important;height:42px!important;background:#25241f!important;color:#f8f6f1!important;
+    font-family:Georgia,"Times New Roman",serif!important;font-size:18px!important;font-weight:500!important;
+    letter-spacing:-.04em!important;border-radius:0!important;
+  }
+  .ma-header .ma-logo strong{
+    color:#24231f!important;font-family:Georgia,"Times New Roman",serif!important;
+    font-size:clamp(16px,1.35vw,21px)!important;font-weight:500!important;
+    text-transform:none!important;letter-spacing:.015em!important;line-height:1.1!important;
+    max-width:250px!important;
+  }
+  .ma-header .ma-logo-image{max-width:130px!important;max-height:48px!important;}
+  .ma-header>.ma-nav{
+    grid-column:1/-1!important;grid-row:2!important;justify-self:stretch!important;
+    display:flex!important;align-items:stretch!important;justify-content:center!important;
+    flex-wrap:wrap!important;gap:clamp(4px,.65vw,12px)!important;
+    width:100%!important;min-width:0!important;margin:0!important;padding:0!important;
+    border:0!important;border-top:1px solid #e4ddd3!important;border-radius:0!important;
+    background:transparent!important;box-shadow:none!important;
+  }
+  .ma-header>.ma-nav:before{display:none!important;content:none!important;}
+  .ma-header .ma-nav>.ma-menu-item{align-self:stretch!important;gap:3px!important;}
+  .ma-header .ma-nav>.ma-menu-item>.ma-menu-link{
+    display:flex!important;align-items:center!important;min-height:48px!important;
+    padding:0 clamp(10px,1.15vw,19px)!important;position:relative!important;
+    color:#5d584f!important;background:transparent!important;border:0!important;border-radius:0!important;
+    font-family:"Manrope",Arial,sans-serif!important;font-size:10px!important;font-weight:600!important;
+    text-transform:uppercase!important;letter-spacing:.105em!important;white-space:nowrap!important;
+    transition:color .2s ease!important;
+  }
+  .ma-header .ma-nav>.ma-menu-item>.ma-menu-link:after{
+    content:""!important;display:block!important;position:absolute!important;left:clamp(10px,1.15vw,19px)!important;
+    right:clamp(10px,1.15vw,19px)!important;bottom:0!important;height:2px!important;
+    background:#a88358!important;transform:scaleX(0)!important;transform-origin:left center!important;
+    transition:transform .25s ease!important;opacity:1!important;
+  }
+  .ma-header .ma-nav>.ma-menu-item:hover>.ma-menu-link,
+  .ma-header .ma-nav>.ma-menu-item:focus-within>.ma-menu-link,
+  .ma-header .ma-nav>.ma-menu-item.is-active>.ma-menu-link{color:#24231f!important;background:transparent!important;}
+  .ma-header .ma-nav>.ma-menu-item:hover>.ma-menu-link:after,
+  .ma-header .ma-nav>.ma-menu-item:focus-within>.ma-menu-link:after{transform:scaleX(1)!important;}
+  .ma-header .ma-nav .ma-submenu-toggle{color:#76634d!important;padding:5px 7px!important;}
+  .ma-header .ma-nav .ma-submenu{top:100%!important;left:0!important;min-width:230px!important;
+    padding:8px 14px!important;background:#26251f!important;border:0!important;border-top:2px solid #a88358!important;
+    box-shadow:0 18px 38px rgba(23,21,17,.18)!important;border-radius:0!important;}
+  .ma-header .ma-nav .ma-submenu .ma-menu-link{padding:12px 8px!important;color:#f3eee5!important;
+    font-size:10px!important;letter-spacing:.075em!important;border-bottom:1px solid rgba(255,255,255,.11)!important;}
+  .ma-header .ma-nav .ma-submenu .ma-menu-link:hover{color:#d7b68d!important;background:rgba(255,255,255,.045)!important;}
+  .ma-header>.ma-socials:not(.ma-mobile-socials){grid-column:2!important;grid-row:1!important;justify-self:center!important;gap:8px!important;}
+  .ma-header>.ma-socials:not(.ma-mobile-socials) a{width:29px!important;height:29px!important;border:1px solid #d9d0c3!important;
+    background:transparent!important;color:#5c5144!important;border-radius:50%!important;transition:all .2s ease!important;}
+  .ma-header>.ma-socials:not(.ma-mobile-socials) a:hover{background:#282720!important;color:#f8f6f1!important;border-color:#282720!important;}
+  .ma-header .ma-header-actions{grid-column:3!important;grid-row:1!important;justify-self:end!important;gap:12px!important;}
+  .ma-header .ma-language-trigger{border:0!important;border-bottom:1px solid #d9d0c3!important;color:#4d473f!important;
+    background:transparent!important;border-radius:0!important;padding:9px 3px!important;font-size:10px!important;letter-spacing:.07em!important;}
+  .ma-header .ma-language-trigger:hover,.ma-header .ma-language.is-open .ma-language-trigger{color:#a17a4e!important;border-color:#a17a4e!important;}
+  .ma-header .ma-header-cta{padding:12px 15px!important;gap:12px!important;background:transparent!important;
+    border:1px solid #39362f!important;border-radius:0!important;color:#292720!important;
+    font-family:"Manrope",Arial,sans-serif!important;font-size:9px!important;font-weight:600!important;
+    letter-spacing:.1em!important;transition:background .2s ease,color .2s ease,border-color .2s ease!important;}
+  .ma-header .ma-header-cta:after{color:#a88358!important;}
+  .ma-header .ma-header-cta:hover,.ma-header .ma-header-cta:focus-visible{background:#292720!important;border-color:#292720!important;color:#f8f6f1!important;}
+  .ma-header .ma-header-cta:hover:after,.ma-header .ma-header-cta:focus-visible:after{color:#dfc5a3!important;}
+  .ma-header.is-scrolled{box-shadow:0 8px 28px rgba(36,31,24,.09)!important;}
+}
+@media(max-width:900px){
+  .ma-header{display:flex!important;grid-template-columns:none!important;grid-template-rows:none!important;
+    min-height:74px!important;padding:10px 18px!important;gap:10px!important;background:#f8f6f1!important;
+    border-bottom:1px solid #d9d1c5!important;}
+  .ma-header .ma-logo{min-height:0!important;max-width:calc(100% - 54px)!important;}
+  .ma-header .ma-logo strong{font-family:Georgia,"Times New Roman",serif!important;color:#24231f!important;
+    text-transform:none!important;letter-spacing:.01em!important;font-weight:500!important;}
+  .ma-header .ma-toggle{margin-left:auto!important;border:1px solid #d9d0c3!important;color:#292720!important;
+    background:transparent!important;border-radius:0!important;}
+  .ma-header .ma-nav{position:absolute!important;left:0!important;right:0!important;top:100%!important;
+    width:auto!important;border-top:1px solid #d9d1c5!important;background:#f8f6f1!important;}
+  .ma-header .ma-nav .ma-menu-link{color:#292720!important;}
+  .ma-header .ma-header-actions .ma-header-cta{border-color:#39362f!important;background:transparent!important;color:#292720!important;}
+}
+
+
+/* v2.76.34 — Istanbul editorial white header, isolated to Interior Architecture theme */
+.ma-header{position:sticky!important;top:0!important;z-index:1000!important;display:grid!important;grid-template-columns:1fr minmax(260px,1.15fr) 1fr!important;grid-template-rows:188px 62px!important;align-items:center!important;gap:0!important;width:100%!important;min-height:250px!important;padding:0 clamp(24px,4.6vw,78px)!important;background:#fff!important;color:#171717!important;border:0!important;border-bottom:1px solid #dedede!important;box-shadow:none!important;}
+.ma-header .ma-logo{grid-column:2!important;grid-row:1!important;justify-self:center!important;align-self:center!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:0!important;width:max-content!important;max-width:100%!important;min-height:0!important;margin:0!important;padding:15px 0 18px!important;color:#151515!important;text-decoration:none!important;text-align:center!important;background:transparent!important;border:0!important;box-shadow:none!important;}
+.ma-header .ma-istanbul-mark{display:block!important;width:clamp(205px,24vw,340px)!important;height:auto!important;max-height:76px!important;margin:0 auto 4px!important;color:#171717!important;}
+.ma-header .ma-logo-title{display:block!important;margin:0!important;font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(23px,2.2vw,31px)!important;font-weight:400!important;line-height:1.12!important;letter-spacing:.24em!important;text-indent:.24em!important;color:#111!important;}
+.ma-header .ma-logo-subtitle{display:block!important;margin-top:7px!important;font-family:"Manrope",Arial,sans-serif!important;font-size:10px!important;font-weight:500!important;line-height:1.3!important;letter-spacing:.27em!important;text-indent:.27em!important;color:#222!important;white-space:nowrap!important;}
+.ma-header .ma-toggle{display:none!important;}
+.ma-header>.ma-nav{grid-column:1/-1!important;grid-row:2!important;position:relative!important;inset:auto!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:clamp(28px,4vw,72px)!important;width:calc(100% + 2 * clamp(24px,4.6vw,78px))!important;margin:0 calc(-1 * clamp(24px,4.6vw,78px))!important;padding:0 20px!important;min-height:62px!important;background:#fff!important;border-top:1px solid #dedede!important;border-bottom:1px solid #dedede!important;box-shadow:none!important;}
+.ma-header .ma-menu-item{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;min-height:62px!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important;}
+.ma-header .ma-menu-link{position:relative!important;display:inline-flex!important;align-items:center!important;min-height:62px!important;padding:0 2px!important;background:transparent!important;border:0!important;border-radius:0!important;color:#171717!important;font-family:"Manrope",Arial,sans-serif!important;font-size:12px!important;font-weight:500!important;letter-spacing:.085em!important;text-transform:uppercase!important;text-decoration:none!important;white-space:nowrap!important;transition:color .2s ease!important;}
+.ma-header .ma-menu-link:after{content:""!important;position:absolute!important;left:0!important;right:0!important;bottom:12px!important;width:0!important;height:1px!important;margin:auto!important;background:#171717!important;transition:width .2s ease!important;}
+.ma-header .ma-menu-link:hover:after,.ma-header .ma-menu-link:focus-visible:after{width:100%!important;}
+.ma-header .ma-menu-link:hover{color:#666!important;}
+.ma-header .ma-submenu{top:100%!important;left:0!important;min-width:210px!important;padding:10px 0!important;background:#fff!important;border:1px solid #e2e2e2!important;border-top:1px solid #222!important;border-radius:0!important;box-shadow:0 12px 28px rgba(0,0,0,.08)!important;}
+.ma-header .ma-submenu .ma-menu-item,.ma-header .ma-submenu .ma-menu-link{min-height:40px!important;width:100%!important;justify-content:flex-start!important;}
+.ma-header .ma-submenu .ma-menu-link{padding:9px 18px!important;font-size:11px!important;letter-spacing:.035em!important;text-transform:none!important;}
+.ma-header .ma-submenu .ma-menu-link:after{display:none!important;}
+.ma-header>.ma-socials:not(.ma-mobile-socials){position:absolute!important;top:42px!important;right:clamp(255px,25vw,420px)!important;display:flex!important;align-items:center!important;gap:12px!important;}
+.ma-header>.ma-socials:not(.ma-mobile-socials) a{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:18px!important;height:22px!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;color:#171717!important;}
+.ma-header>.ma-socials:not(.ma-mobile-socials) svg{width:15px!important;height:15px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.8!important;}
+.ma-header .ma-header-actions{position:absolute!important;top:32px!important;right:clamp(24px,4.6vw,78px)!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:12px!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important;}
+.ma-header .ma-language{position:absolute!important;top:42px!important;left:clamp(24px,4.6vw,78px)!important;margin:0!important;}
+.ma-header .ma-language-trigger{padding:4px 0!important;border:0!important;background:transparent!important;border-radius:0!important;color:#171717!important;font-family:"Manrope",Arial,sans-serif!important;font-size:11px!important;letter-spacing:.04em!important;}
+.ma-header .ma-header-phone{display:inline-flex!important;align-items:center!important;gap:7px!important;padding:0 12px!important;border-right:1px solid #cfcfcf!important;color:#222!important;text-decoration:none!important;font-family:"Manrope",Arial,sans-serif!important;font-size:10px!important;white-space:nowrap!important;}
+.ma-header .ma-header-phone svg{width:14px!important;height:14px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.6!important;}
+.ma-header .ma-header-cta{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:37px!important;padding:0 15px!important;border:1px solid #c7c7c7!important;border-radius:0!important;background:transparent!important;color:#222!important;font-family:"Manrope",Arial,sans-serif!important;font-size:10px!important;font-weight:500!important;letter-spacing:.035em!important;white-space:nowrap!important;}
+.ma-header .ma-header-cta:hover{background:#171717!important;border-color:#171717!important;color:#fff!important;}
+.ma-header .ma-mobile-call,.ma-header .ma-mobile-socials{display:none!important;}
+@media(max-width:900px){
+ .ma-header{display:flex!important;position:sticky!important;min-height:0!important;height:auto!important;padding:10px 18px!important;gap:0!important;flex-wrap:wrap!important;background:#fff!important;border-bottom:1px solid #ddd!important;}
+ .ma-header .ma-logo{order:1!important;align-items:flex-start!important;justify-self:auto!important;width:auto!important;max-width:calc(100% - 54px)!important;padding:4px 0!important;text-align:left!important;}
+ .ma-header .ma-istanbul-mark{width:110px!important;max-height:34px!important;margin:0 0 2px!important;}
+ .ma-header .ma-logo-title{font-size:17px!important;letter-spacing:.14em!important;text-indent:0!important;}
+ .ma-header .ma-logo-subtitle{margin-top:3px!important;font-size:7px!important;letter-spacing:.13em!important;text-indent:0!important;white-space:normal!important;}
+ .ma-header .ma-toggle{display:flex!important;order:2!important;margin-left:auto!important;width:42px!important;height:42px!important;align-items:center!important;justify-content:center!important;border:1px solid #ddd!important;border-radius:0!important;background:#fff!important;color:#111!important;}
+ .ma-header>.ma-nav{display:none!important;order:4!important;position:static!important;inset:auto!important;flex:0 0 calc(100% + 36px)!important;width:calc(100% + 36px)!important;margin:10px -18px -10px!important;padding:0 18px!important;min-height:0!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;border-top:1px solid #ddd!important;border-bottom:0!important;background:#fff!important;}
+ .ma-header.is-open>.ma-nav,.ma-header .ma-nav.is-open{display:flex!important;}
+ .ma-header .ma-menu-item,.ma-header .ma-menu-link{width:100%!important;min-height:46px!important;justify-content:flex-start!important;}
+ .ma-header .ma-menu-link{font-size:12px!important;border-bottom:1px solid #eee!important;}
+ .ma-header .ma-menu-link:after{display:none!important;}
+ .ma-header .ma-submenu{position:static!important;min-width:0!important;width:100%!important;box-shadow:none!important;border:0!important;border-top:0!important;padding:0 0 0 12px!important;}
+ .ma-header .ma-header-actions{display:none!important;}
+ .ma-header>.ma-socials:not(.ma-mobile-socials){display:none!important;}
+ .ma-header .ma-language{position:static!important;order:3!important;margin-left:auto!important;margin-right:12px!important;}
+}
+
+
+/* v2.76.35 — building silhouette logo; firm name only beneath the mark */
+.ma-header .ma-istanbul-mark{display:block!important;width:clamp(205px,24vw,340px)!important;height:auto!important;max-height:76px!important;margin:0 auto 8px!important;color:#171717!important;}
+.ma-header .ma-logo-title{display:none!important;}
+.ma-header .ma-logo-subtitle{display:block!important;margin-top:0!important;font-family:"Manrope",Arial,sans-serif!important;font-size:11px!important;font-weight:500!important;line-height:1.4!important;letter-spacing:.24em!important;text-indent:.24em!important;color:#222!important;white-space:nowrap!important;}
+@media(max-width:900px){
+ .ma-header .ma-istanbul-mark{width:110px!important;max-height:34px!important;margin:0 0 5px!important;}
+ .ma-header .ma-logo-subtitle{margin-top:0!important;font-size:7px!important;letter-spacing:.12em!important;text-indent:0!important;white-space:normal!important;}
+}
+
+
+/* v2.76.36 — fine-line interior architecture mark; remove legacy logo residue */
+.ma-header .ma-logo{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;width:max-content!important;margin-left:auto!important;margin-right:auto!important;gap:0!important;}
+.ma-header .ma-logo::before,.ma-header .ma-logo::after,.ma-header .ma-logo strong::before,.ma-header .ma-logo strong::after{content:none!important;display:none!important;background:none!important;box-shadow:none!important;border:0!important;}
+.ma-header .ma-logo strong{display:none!important;}
+.ma-header .ma-istanbul-mark.ma-interior-line-mark{width:clamp(205px,24vw,340px)!important;height:auto!important;max-height:88px!important;margin:0 auto 7px!important;display:block!important;color:#222!important;}
+.ma-header .ma-logo-subtitle{display:block!important;width:100%!important;margin:0 auto!important;padding:0!important;text-align:center!important;align-self:center!important;font-family:"Manrope",Arial,sans-serif!important;font-size:10px!important;font-weight:500!important;line-height:1.5!important;letter-spacing:.22em!important;text-indent:.22em!important;color:#222!important;white-space:nowrap!important;}
+@media(max-width:900px){.ma-header .ma-logo{margin-left:0!important;margin-right:auto!important;align-items:flex-start!important;text-align:left!important;}.ma-header .ma-istanbul-mark.ma-interior-line-mark{width:clamp(145px,42vw,220px)!important;max-height:60px!important;margin:0 0 4px!important;}.ma-header .ma-logo-subtitle{text-align:left!important;text-indent:0!important;letter-spacing:.09em!important;font-size:8px!important;}}
+
+
+/* v2.76.37 — delicate interior-architecture line-art logo; remove legacy mark residue */
+.ma-header .ma-logo.ma-editorial-logo{position:absolute!important;left:50%!important;top:18px!important;transform:translateX(-50%)!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;width:clamp(270px,30vw,390px)!important;max-width:calc(100% - 560px)!important;min-width:240px!important;margin:0!important;padding:0!important;gap:0!important;text-align:center!important;}
+.ma-header .ma-logo.ma-editorial-logo::before,.ma-header .ma-logo.ma-editorial-logo::after,.ma-header .ma-logo.ma-editorial-logo>*::before,.ma-header .ma-logo.ma-editorial-logo>*::after{content:none!important;display:none!important;background:transparent!important;box-shadow:none!important;border:0!important;}
+.ma-header .ma-logo.ma-editorial-logo>span:not(.ma-logo-subtitle),.ma-header .ma-logo.ma-editorial-logo .ma-logo-title,.ma-header .ma-logo.ma-editorial-logo strong,.ma-header .ma-logo.ma-editorial-logo .ma-logo-image{display:none!important;}
+.ma-header .ma-logo.ma-editorial-logo .ma-interior-line-mark{display:block!important;width:100%!important;max-height:82px!important;height:auto!important;margin:0 auto 6px!important;color:#292929!important;}
+.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{display:block!important;position:static!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;text-align:center!important;text-indent:0!important;align-self:center!important;font-family:"Manrope",Arial,sans-serif!important;font-size:10px!important;font-weight:500!important;line-height:1.5!important;letter-spacing:.20em!important;color:#303030!important;white-space:nowrap!important;}
+.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle::before,.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle::after{content:none!important;display:none!important;}
+@media(max-width:900px){.ma-header .ma-logo.ma-editorial-logo{position:static!important;left:auto!important;top:auto!important;transform:none!important;order:1!important;width:clamp(190px,56vw,260px)!important;min-width:0!important;max-width:calc(100% - 54px)!important;margin:0 auto!important;align-items:center!important;text-align:center!important;}.ma-header .ma-logo.ma-editorial-logo .ma-interior-line-mark{width:100%!important;max-height:58px!important;margin:0 auto 4px!important;}.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{font-size:8px!important;letter-spacing:.10em!important;white-space:normal!important;text-indent:0!important;text-align:center!important;}}
+
+
+
+
+/* v2.76.40 — clean Cool Hunter-inspired masthead: local mark centered above one clean menu row */
+.ma-header{position:relative!important;display:flex!important;align-items:flex-end!important;min-height:142px!important;padding:88px clamp(24px,4.6vw,78px) 0!important;gap:0!important;background:#fff!important;border-bottom:1px solid #dedede!important;overflow:visible!important;}
+.ma-header .ma-logo.ma-editorial-logo{position:absolute!important;left:50%!important;top:10px!important;transform:translateX(-50%)!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;width:min(300px,32vw)!important;min-width:190px!important;max-width:calc(100% - 420px)!important;margin:0!important;padding:0!important;gap:0!important;text-align:center!important;z-index:2!important;}
+.ma-header .ma-logo.ma-editorial-logo::before,.ma-header .ma-logo.ma-editorial-logo::after,.ma-header .ma-logo.ma-editorial-logo>*::before,.ma-header .ma-logo.ma-editorial-logo>*::after{content:none!important;display:none!important;background:transparent!important;box-shadow:none!important;border:0!important;}
+.ma-header .ma-logo.ma-editorial-logo .ma-coolhunter-mark{display:block!important;width:189px!important;max-width:100%!important;height:48px!important;max-height:none!important;object-fit:contain!important;margin:0 auto 3px!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;filter:none!important;}
+.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{display:block!important;position:static!important;width:auto!important;max-width:100%!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;text-align:center!important;text-indent:.20em!important;align-self:center!important;font-family:Georgia,"Times New Roman",serif!important;font-size:12px!important;font-weight:500!important;line-height:1.45!important;letter-spacing:.20em!important;color:#202020!important;white-space:nowrap!important;text-transform:uppercase!important;}
+.ma-header .ma-nav{position:relative!important;order:1!important;flex:1 1 100%!important;width:100%!important;min-height:44px!important;margin:0!important;padding:0!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:clamp(14px,2.2vw,32px)!important;background:#fff!important;background-image:none!important;border:0!important;}
+.ma-header .ma-nav .ma-menu-link{padding:15px 0!important;font-family:"Manrope",Arial,sans-serif!important;font-size:10px!important;font-weight:500!important;letter-spacing:.10em!important;color:#222!important;text-transform:uppercase!important;}
+.ma-header .ma-nav .ma-menu-link:hover,.ma-header .ma-nav .ma-menu-item:focus-within>.ma-menu-link{color:#8f6848!important;}
+.ma-header .ma-logo>span,.ma-header .ma-logo strong{background:transparent!important;border:0!important;box-shadow:none!important;color:#202020!important;}
+@media(max-width:900px){
+ .ma-header{min-height:0!important;height:auto!important;padding:8px 18px 0!important;gap:0!important;flex-wrap:wrap!important;align-items:center!important;}
+ .ma-header .ma-logo.ma-editorial-logo{position:static!important;left:auto!important;top:auto!important;transform:none!important;order:1!important;width:clamp(190px,56vw,260px)!important;min-width:0!important;max-width:calc(100% - 54px)!important;margin:0 auto!important;align-items:center!important;text-align:center!important;}
+ .ma-header .ma-logo.ma-editorial-logo .ma-coolhunter-mark{width:189px!important;max-width:100%!important;height:48px!important;margin:0 auto 3px!important;}
+ .ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{font-size:9px!important;letter-spacing:.12em!important;text-indent:.12em!important;white-space:normal!important;text-align:center!important;}
+ .ma-header .ma-toggle{order:2!important;margin-left:auto!important;}
+ .ma-header>.ma-nav{order:4!important;flex:0 0 calc(100% + 36px)!important;width:calc(100% + 36px)!important;margin:10px -18px 0!important;padding:0 18px!important;background:#fff!important;background-image:none!important;border-top:1px solid #eee!important;}
+ .ma-header.is-open>.ma-nav,.ma-header .ma-nav.is-open{display:flex!important;}
+}
+
+
+/* v2.76.44 — minimal alignment correction only: phone left, tools right */
+.ma-header{position:relative!important;}
+.ma-header .ma-header-phone{position:absolute!important;left:12px!important;right:auto!important;top:auto!important;bottom:10px!important;display:inline-flex!important;align-items:center!important;gap:7px!important;margin:0!important;padding:0!important;border:0!important;transform:none!important;z-index:20!important;white-space:nowrap!important;}
+.ma-header>.ma-socials:not(.ma-mobile-socials){position:absolute!important;left:auto!important;right:142px!important;top:auto!important;bottom:10px!important;display:flex!important;align-items:center!important;gap:8px!important;margin:0!important;z-index:20!important;}
+.ma-header .ma-header-actions{position:absolute!important;left:auto!important;right:12px!important;top:auto!important;bottom:7px!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:10px!important;margin:0!important;padding:0!important;z-index:21!important;background:transparent!important;border:0!important;}
+.ma-header .ma-header-actions .ma-header-whatsapp{display:grid!important;place-items:center!important;width:26px!important;height:26px!important;border:1px solid #d9d0c5!important;border-radius:50%!important;background:transparent!important;color:#5c5144!important;}
+.ma-header .ma-header-actions .ma-header-whatsapp svg{width:16px!important;height:16px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.5!important;}
+.ma-header .ma-header-actions .ma-language{position:static!important;display:block!important;margin:0!important;}
+.ma-header .ma-header-actions .ma-language-trigger{padding:6px 7px!important;border:0!important;border-bottom:1px solid #d9d0c3!important;background:transparent!important;color:#4d473f!important;font-size:10px!important;}
+.ma-header .ma-header-actions .ma-mobile-call,.ma-header .ma-header-actions .ma-mobile-socials{display:none!important;}
+.ma-header .ma-header-cta{display:none!important;}
+@media(max-width:900px){
+ .ma-header{padding-bottom:38px!important;}
+ .ma-header .ma-header-phone{left:10px!important;right:auto!important;bottom:8px!important;font-size:10px!important;}
+ .ma-header>.ma-socials:not(.ma-mobile-socials){left:auto!important;right:116px!important;bottom:10px!important;gap:5px!important;}
+ .ma-header>.ma-socials:not(.ma-mobile-socials) a{width:20px!important;height:20px!important;}
+ .ma-header .ma-header-actions{left:auto!important;right:8px!important;bottom:6px!important;gap:6px!important;}
+ .ma-header .ma-header-actions .ma-header-whatsapp{width:23px!important;height:23px!important;}
+ .ma-header .ma-header-actions .ma-language-trigger{padding:5px!important;font-size:9px!important;}
+}
+
+
+/* v2.76.45 — align phone and utility controls with the centered SVG mark; no bottom row */
+@media(min-width:901px){
+ .ma-header{min-height:142px!important;padding-top:88px!important;padding-bottom:0!important;}
+ .ma-header .ma-header-phone{position:absolute!important;left:clamp(12px,2.4vw,38px)!important;right:auto!important;top:25px!important;bottom:auto!important;display:inline-flex!important;align-items:center!important;gap:7px!important;margin:0!important;z-index:25!important;white-space:nowrap!important;}
+ .ma-header>.ma-socials:not(.ma-mobile-socials){position:absolute!important;left:auto!important;right:clamp(120px,13vw,190px)!important;top:25px!important;bottom:auto!important;display:flex!important;align-items:center!important;gap:8px!important;margin:0!important;z-index:25!important;}
+ .ma-header .ma-header-actions{position:absolute!important;left:auto!important;right:clamp(12px,2.4vw,38px)!important;top:22px!important;bottom:auto!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:10px!important;margin:0!important;padding:0!important;z-index:26!important;}
+ .ma-header .ma-header-actions .ma-header-whatsapp{order:2!important;}
+ .ma-header .ma-header-actions .ma-language{order:1!important;}
+}
+@media(max-width:900px){
+ .ma-header{padding-bottom:0!important;}
+ .ma-header .ma-header-phone{left:10px!important;right:auto!important;top:25px!important;bottom:auto!important;font-size:10px!important;max-width:calc(50% - 120px)!important;}
+ .ma-header>.ma-socials:not(.ma-mobile-socials){left:auto!important;right:88px!important;top:25px!important;bottom:auto!important;gap:5px!important;}
+ .ma-header>.ma-socials:not(.ma-mobile-socials) a{width:20px!important;height:20px!important;}
+ .ma-header .ma-header-actions{left:auto!important;right:8px!important;top:22px!important;bottom:auto!important;gap:6px!important;}
+ .ma-header .ma-header-actions .ma-header-whatsapp{width:23px!important;height:23px!important;}
+ .ma-header .ma-header-actions .ma-language-trigger{padding:5px!important;font-size:9px!important;}
+}
+
+
+/* v2.76.48 — requested final placement: phone left, utilities right, aligned low with the SVG mark */
+@media(min-width:901px){
+ .ma-header .ma-header-phone{left:clamp(12px,2.4vw,38px)!important;right:auto!important;top:40px!important;bottom:auto!important;}
+ .ma-header>.ma-socials:not(.ma-mobile-socials){left:auto!important;right:clamp(120px,13vw,190px)!important;top:40px!important;bottom:auto!important;}
+ .ma-header .ma-header-actions{left:auto!important;right:clamp(12px,2.4vw,38px)!important;top:37px!important;bottom:auto!important;}
+}
+
+
+/* v2.76.50 — add back only the phone at the left, aligned with the centered SVG mark. */
+.ma-header .ma-header-phone{position:absolute!important;left:clamp(12px,2.4vw,38px)!important;right:auto!important;top:25px!important;bottom:auto!important;display:inline-flex!important;align-items:center!important;gap:7px!important;margin:0!important;padding:0!important;border:0!important;transform:none!important;z-index:30!important;white-space:nowrap!important;color:#222!important;text-decoration:none!important;font-family:"Manrope",Arial,sans-serif!important;font-size:10px!important;}
+.ma-header .ma-header-phone svg{display:block!important;width:15px!important;height:15px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.6!important;flex:0 0 auto!important;}
+@media(max-width:900px){.ma-header .ma-header-phone{left:10px!important;right:auto!important;top:25px!important;bottom:auto!important;font-size:10px!important;max-width:calc(50% - 120px)!important;}}
+
+
+/* v2.76.51 — restore social links and WhatsApp on the right, aligned with the centered mark. */
+.ma-header .ma-header-socials{position:absolute!important;left:auto!important;right:clamp(12px,2.4vw,38px)!important;top:25px!important;bottom:auto!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:9px!important;margin:0!important;padding:0!important;z-index:31!important;background:transparent!important;border:0!important;}
+.ma-header .ma-header-socials a{width:25px!important;height:25px!important;display:grid!important;place-items:center!important;border:1px solid #d9d0c5!important;border-radius:50%!important;background:transparent!important;color:#5c5144!important;}
+.ma-header .ma-header-socials a:hover{color:#8f6848!important;border-color:#8f6848!important;}
+.ma-header .ma-header-socials svg{display:block!important;width:14px!important;height:14px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.5!important;stroke-linecap:round!important;stroke-linejoin:round!important;}
+.ma-header .ma-header-socials a[aria-label="Twitter"] svg{fill:currentColor!important;stroke:none!important;}
+.ma-header .ma-header-socials .ma-header-whatsapp svg{width:16px!important;height:16px!important;}
+@media(max-width:900px){.ma-header .ma-header-socials{right:10px!important;top:25px!important;gap:5px!important;max-width:calc(50% - 90px)!important;}.ma-header .ma-header-socials a{width:22px!important;height:22px!important;}.ma-header .ma-header-socials svg{width:12px!important;height:12px!important;}}
+
+
+/* v2.76.52 — clean white header; phone and right-side social/WhatsApp controls share the lower masthead line. */
+.ma-header{background:#fff!important;color:#202020!important;}
+.ma-header .ma-header-phone{top:auto!important;bottom:67px!important;color:#202020!important;}
+.ma-header .ma-header-socials{top:auto!important;bottom:62px!important;right:clamp(12px,2.4vw,38px)!important;gap:8px!important;}
+.ma-header .ma-header-socials a{background:#fff!important;border:1px solid #dedede!important;color:#292929!important;border-radius:50%!important;}
+.ma-header .ma-header-socials a:hover{background:#fff!important;color:#8b7355!important;border-color:#b8a58d!important;}
+@media(max-width:900px){
+ .ma-header{background:#fff!important;}
+ .ma-header .ma-header-phone{top:auto!important;bottom:8px!important;left:10px!important;}
+ .ma-header .ma-header-socials{top:auto!important;bottom:6px!important;right:10px!important;gap:5px!important;max-width:calc(50% - 90px)!important;}
+ .ma-header .ma-header-socials a{width:22px!important;height:22px!important;background:#fff!important;border-color:#dedede!important;color:#292929!important;}
+}
+
+
+/* v2.76.53 — phone restored to its original left position beside the centered SVG; socials and WhatsApp aligned on the right. */
+.ma-header{background:#fff!important;color:#202020!important;}
+.ma-header .ma-header-phone{left:clamp(12px,2.4vw,38px)!important;right:auto!important;top:25px!important;bottom:auto!important;color:#202020!important;}
+.ma-header .ma-header-socials{left:auto!important;right:clamp(12px,2.4vw,38px)!important;top:25px!important;bottom:auto!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:8px!important;}
+.ma-header .ma-header-socials a{background:#fff!important;border:1px solid #dedede!important;color:#292929!important;border-radius:50%!important;}
+.ma-header .ma-header-socials a:hover{background:#fff!important;color:#8b7355!important;border-color:#b8a58d!important;}
+@media(max-width:900px){
+ .ma-header .ma-header-phone{left:10px!important;right:auto!important;top:25px!important;bottom:auto!important;max-width:calc(50% - 90px)!important;}
+ .ma-header .ma-header-socials{left:auto!important;right:10px!important;top:25px!important;bottom:auto!important;gap:5px!important;max-width:calc(50% - 90px)!important;}
+ .ma-header .ma-header-socials a{width:22px!important;height:22px!important;background:#fff!important;border-color:#dedede!important;color:#292929!important;}
+ .ma-header .ma-header-socials svg{width:12px!important;height:12px!important;}
+}
+
+
+/* v2.76.55 — final position: align with the SVG and anchor tightly to the header right edge. */
+.ma-header .ma-header-socials{position:absolute!important;left:auto!important;right:4px!important;top:25px!important;bottom:auto!important;transform:none!important;z-index:40!important;}
+@media(max-width:900px){.ma-header .ma-header-socials{right:4px!important;top:25px!important;bottom:auto!important;transform:none!important;}}
+
+/* v2.76.57: social links and WhatsApp aligned with the centered SVG mark, anchored to the far right. */
+.ma-header .ma-header-socials{position:absolute!important;left:auto!important;right:4px!important;top:25px!important;bottom:auto!important;transform:none!important;z-index:40!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:8px!important;}
+@media(max-width:900px){.ma-header .ma-header-socials{right:4px!important;top:25px!important;bottom:auto!important;gap:5px!important;max-width:calc(50% - 90px)!important;}}
+
+
+/* v2.76.58 — match the phone's exact vertical line; keep a visible inset from the right edge. */
+.ma-header .ma-header-phone{top:25px!important;bottom:auto!important;}
+.ma-header .ma-header-socials{position:absolute!important;left:auto!important;right:24px!important;top:25px!important;bottom:auto!important;transform:none!important;z-index:40!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:8px!important;visibility:visible!important;opacity:1!important;}
+.ma-header .ma-header-socials a{flex:0 0 25px!important;width:25px!important;height:25px!important;visibility:visible!important;opacity:1!important;}
+@media(max-width:900px){.ma-header .ma-header-phone{top:25px!important;bottom:auto!important;}.ma-header .ma-header-socials{right:12px!important;top:25px!important;bottom:auto!important;gap:5px!important;max-width:calc(50% - 90px)!important;}.ma-header .ma-header-socials a{flex-basis:22px!important;width:22px!important;height:22px!important;}}
+
+/* v2.76.60: balanced editorial header tools; phone stays left, tools align to phone baseline on the right. */
+.ma-header .ma-header-right-tools{position:absolute!important;right:clamp(18px,3vw,42px)!important;top:25px!important;bottom:auto!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:14px!important;z-index:45!important;max-width:48%!important;}
+.ma-header .ma-header-right-tools .ma-header-socials{position:static!important;inset:auto!important;transform:none!important;display:flex!important;align-items:center!important;gap:8px!important;margin:0!important;padding:0!important;max-width:none!important;}
+.ma-header .ma-header-right-tools .ma-header-socials a{width:24px!important;height:24px!important;flex:0 0 24px!important;display:grid!important;place-items:center!important;border:1px solid #ded8cf!important;border-radius:50%!important;background:transparent!important;color:#514a42!important;}
+.ma-header .ma-header-right-tools .ma-header-socials a:hover{color:#a17a4e!important;border-color:#a17a4e!important;}
+.ma-header .ma-header-right-tools .ma-header-socials svg{width:13px!important;height:13px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.5!important;stroke-linecap:round!important;stroke-linejoin:round!important;}
+.ma-header .ma-header-right-tools .ma-header-socials a[aria-label="Twitter"] svg{fill:currentColor!important;stroke:none!important;}
+.ma-header .ma-header-right-tools .ma-header-language{display:flex!important;align-items:center!important;gap:6px!important;padding-left:12px!important;border-left:1px solid #ddd5ca!important;white-space:nowrap!important;}
+.ma-header .ma-header-right-tools .ma-header-language a{font-family:"Manrope",Arial,sans-serif!important;font-size:10px!important;letter-spacing:.06em!important;text-decoration:none!important;color:#71685e!important;padding:3px 1px!important;}
+.ma-header .ma-header-right-tools .ma-header-language a.is-active{color:#a17a4e!important;font-weight:700!important;}
+@media(max-width:900px){.ma-header .ma-header-right-tools{right:12px!important;top:25px!important;gap:7px!important;max-width:55%!important}.ma-header .ma-header-right-tools .ma-header-socials{gap:4px!important}.ma-header .ma-header-right-tools .ma-header-socials a{width:21px!important;height:21px!important;flex-basis:21px!important}.ma-header .ma-header-right-tools .ma-header-language{gap:4px!important;padding-left:6px!important}.ma-header .ma-header-right-tools .ma-header-language a{font-size:9px!important}}
+@media(max-width:560px){.ma-header .ma-header-right-tools{right:10px!important;top:14px!important;max-width:calc(100% - 105px)!important;gap:5px!important}.ma-header .ma-header-right-tools .ma-header-socials a{width:19px!important;height:19px!important;flex-basis:19px!important}.ma-header .ma-header-right-tools .ma-header-language{gap:3px!important;padding-left:5px!important}.ma-header .ma-header-right-tools .ma-header-language a{font-size:8px!important}}
+
+
+/* v2.76.61: prevent raw PHP source from appearing and provide a real language dropdown. */
+.ma-header .ma-header-right-tools .ma-header-language{position:relative!important;display:block!important;padding:0 0 0 12px!important;border-left:1px solid #ddd5ca!important;white-space:nowrap!important;}
+.ma-header .ma-header-right-tools .ma-header-language>summary{list-style:none!important;cursor:pointer!important;display:flex!important;align-items:center!important;gap:5px!important;font-family:"Manrope",Arial,sans-serif!important;font-size:10px!important;letter-spacing:.06em!important;color:#71685e!important;padding:5px 2px!important;user-select:none!important;}
+.ma-header .ma-header-right-tools .ma-header-language>summary::-webkit-details-marker{display:none!important;}
+.ma-header .ma-header-right-tools .ma-header-language>summary svg{width:10px!important;height:10px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.4!important;}
+.ma-header .ma-header-right-tools .ma-header-language .ma-language-menu{display:none;position:absolute;right:0;top:calc(100% + 8px);min-width:64px;padding:5px;background:#fff;border:1px solid #e5ded4;box-shadow:0 8px 24px rgba(25,20,15,.12);z-index:9999;}
+.ma-header .ma-header-right-tools .ma-header-language[open] .ma-language-menu{display:flex!important;flex-direction:column!important;gap:0!important;}
+.ma-header .ma-header-right-tools .ma-header-language .ma-language-menu a{display:block!important;padding:7px 10px!important;font-size:10px!important;line-height:1.3!important;text-decoration:none!important;color:#514a42!important;}
+.ma-header .ma-header-right-tools .ma-header-language .ma-language-menu a:hover,.ma-header .ma-header-right-tools .ma-header-language .ma-language-menu a.is-active{background:#f6f2ec!important;color:#a17a4e!important;font-weight:700!important;}
+@media(max-width:900px){.ma-header .ma-header-right-tools .ma-header-language{padding-left:6px!important}.ma-header .ma-header-right-tools .ma-header-language>summary{font-size:9px!important}.ma-header .ma-header-right-tools .ma-header-language .ma-language-menu a{font-size:9px!important}}
+@media(max-width:560px){.ma-header .ma-header-right-tools .ma-header-language{padding-left:5px!important}.ma-header .ma-header-right-tools .ma-header-language>summary{font-size:8px!important}}
+
+
+/* v2.76.63: make the firm descriptor more legible and bring it closer to the menu row. */
+.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{font-size:14px!important;line-height:1.35!important;letter-spacing:.14em!important;text-indent:.14em!important;margin-top:7px!important;}
+@media(max-width:900px){.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{font-size:10px!important;line-height:1.3!important;letter-spacing:.10em!important;margin-top:5px!important;}}
+@media(max-width:560px){.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{font-size:9px!important;letter-spacing:.07em!important;margin-top:4px!important;}}
+
+
+/* v2.76.64 — premium editorial brand typography: serif main line + airy secondary line. */
+.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:4px!important;width:max-content!important;max-width:100%!important;margin:0 auto!important;text-align:center!important;white-space:normal!important;font-family:Georgia,"Times New Roman",serif!important;font-weight:400!important;color:#171715!important;line-height:1.12!important;letter-spacing:normal!important;text-indent:0!important;}
+.ma-header .ma-logo.ma-editorial-logo .ma-brand-primary{display:block!important;font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(17px,1.42vw,21px)!important;font-weight:400!important;line-height:1.15!important;letter-spacing:.20em!important;text-indent:.20em!important;white-space:nowrap!important;color:#171715!important;}
+.ma-header .ma-logo.ma-editorial-logo .ma-brand-secondary{display:block!important;font-family:Manrope,Arial,sans-serif!important;font-size:10px!important;font-weight:500!important;line-height:1.3!important;letter-spacing:.34em!important;text-indent:.34em!important;white-space:nowrap!important;color:#777168!important;}
+@media(max-width:900px){.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{gap:3px!important}.ma-header .ma-logo.ma-editorial-logo .ma-brand-primary{font-size:15px!important;letter-spacing:.13em!important;text-indent:.13em!important}.ma-header .ma-logo.ma-editorial-logo .ma-brand-secondary{font-size:8px!important;letter-spacing:.22em!important;text-indent:.22em!important}}
+@media(max-width:560px){.ma-header .ma-logo.ma-editorial-logo .ma-brand-primary{font-size:13px!important;letter-spacing:.10em!important;text-indent:.10em!important}.ma-header .ma-logo.ma-editorial-logo .ma-brand-secondary{font-size:7px!important;letter-spacing:.16em!important;text-indent:.16em!important}}
+
+
+/* v2.76.65 — one-line editorial brand name with a characterful architectural serif. */
+.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{display:block!important;width:max-content!important;max-width:calc(100vw - 24px)!important;margin:0 auto!important;text-align:center!important;white-space:nowrap!important;overflow:visible!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:clamp(16px,1.55vw,23px)!important;font-weight:600!important;line-height:1.15!important;letter-spacing:.025em!important;text-indent:0!important;color:#25211d!important;}
+.ma-header .ma-logo.ma-editorial-logo .ma-brand-primary{display:inline!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:inherit!important;font-weight:600!important;line-height:inherit!important;letter-spacing:.025em!important;text-indent:0!important;white-space:nowrap!important;color:inherit!important;}
+.ma-header .ma-logo.ma-editorial-logo .ma-brand-secondary{display:inline!important;margin-left:.34em!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:inherit!important;font-weight:500!important;line-height:inherit!important;letter-spacing:.025em!important;text-indent:0!important;white-space:nowrap!important;color:#8a7258!important;}
+@media(max-width:900px){.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{font-size:16px!important;letter-spacing:.005em!important;max-width:calc(100vw - 16px)!important}.ma-header .ma-logo.ma-editorial-logo .ma-brand-primary,.ma-header .ma-logo.ma-editorial-logo .ma-brand-secondary{letter-spacing:.005em!important}}
+@media(max-width:560px){.ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{font-size:clamp(11px,3.4vw,15px)!important;letter-spacing:0!important;max-width:calc(100vw - 12px)!important}.ma-header .ma-logo.ma-editorial-logo .ma-brand-primary,.ma-header .ma-logo.ma-editorial-logo .ma-brand-secondary{letter-spacing:0!important}.ma-header .ma-logo.ma-editorial-logo .ma-brand-secondary{margin-left:.22em!important}}
+
+
+/* v2.76.66 — delicate open-corner architectural frame on desktop menu hover. Mobile navigation remains unchanged. */
+@media (min-width:901px){
+  .ma-header>.ma-nav>.ma-menu-item>.ma-menu-link{isolation:isolate;overflow:visible!important;transition:color .22s ease!important;}
+  .ma-header>.ma-nav>.ma-menu-item>.ma-menu-link:after{content:""!important;position:absolute!important;inset:12px -13px!important;left:-13px!important;right:-13px!important;bottom:12px!important;width:auto!important;height:auto!important;margin:0!important;background:transparent!important;transform:none!important;opacity:0!important;pointer-events:none!important;border:1px solid rgba(168,131,88,.0)!important;clip-path:polygon(0 0,32% 0,32% 1px,1px 1px,1px 35%,0 35%,0 0,100% 0,100% 35%,calc(100% - 1px) 35%,calc(100% - 1px) 1px,68% 1px,68% 0,100% 0,100% 100%,68% 100%,68% calc(100% - 1px),calc(100% - 1px) calc(100% - 1px),calc(100% - 1px) 65%,100% 65%,100% 100%,0 100%,0 65%,1px 65%,1px calc(100% - 1px),32% calc(100% - 1px),32% 100%,0 100%)!important;transition:opacity .22s ease,border-color .22s ease!important;border-color:rgba(168,131,88,.72)!important;
+  }
+  .ma-header>.ma-nav>.ma-menu-item:hover>.ma-menu-link:after,
+  .ma-header>.ma-nav>.ma-menu-item:focus-within>.ma-menu-link:after{opacity:1!important;}
+  .ma-header>.ma-nav>.ma-menu-item:hover>.ma-menu-link,
+  .ma-header>.ma-nav>.ma-menu-item:focus-within>.ma-menu-link{color:#8f6848!important;}
+}
+
+
+/* v2.76.67 — Premium architectural depth slider. The CMS-managed slide content remains intact. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px){}
+@media(prefers-reduced-motion:reduce){}
+
+
+/* v2.76.68 — Ultra-luxury architectural hero redesign: editorial typography, framed image, layered depth and glass controls. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px){
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+@media(max-width:560px){
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+@media(prefers-reduced-motion:reduce){}
+
+
+/* v2.76.69 — stable ultra-luxury hero slider; overrides legacy experimental rules. */
+
+
+
+
+
+
+
+
+
+
+@media(hover:hover) and (pointer:fine){}
+@media(prefers-reduced-motion:reduce){}
+
+
+/* v2.76.70 — New editorial 3D coverflow slider; replaces the previous fade/zoom-only look. */
+
+
+
+
+
+
+
+@keyframes maEditorialTextIn{from{opacity:0;transform:translate3d(0,24px,45px)}to{opacity:1;transform:translate3d(0,0,45px)}}
+
+
+@media(max-width:900px){}
+@keyframes maEditorialTextInMobile{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){}
+
+
+/* v2.76.71 — Architectural Cinematic: new asymmetrical hero composition. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes maCinematicTextIn{from{opacity:0;transform:translate3d(0,20px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes maPreviewArrive{from{opacity:0;transform:translate3d(22px,-40%,0) rotateY(-8deg)}to{opacity:1;transform:translate3d(0,-43%,0) rotateY(0)}}
+@media(max-width:1050px){}
+@media(max-width:760px){}
+@media(max-width:390px){}
+@media(prefers-reduced-motion:reduce){}
+
+
+/* v2.76.73 — SPLIT REALITY: a completely re-composed architectural hero. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes maSplitPreviewIn{from{opacity:0;transform:translate3d(22px,0,0) rotateY(-8deg)}to{opacity:1;transform:translate3d(0,0,0) rotateY(0)}}
+@media(max-width:1050px){}
+@media(max-width:760px){}
+@media(max-width:390px){}
+@media(prefers-reduced-motion:reduce){}
+
+/* v2.76.74 fix: the split-panel background must sit behind slide content, never cover the editorial text. */
+
+
+
+
+
+
+/* v2.76.75 — 3D GALLERY WALL. Multiple project panels remain visible; active work moves forward in depth. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px){}
+@media(max-width:600px){}
+@media(prefers-reduced-motion:reduce){}
+
+
+/* v2.76.76 — Gallery Wall polish: header-matched navy, cleaner copy, stable mobile stage. */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Remove decorative micro-labels; retain the main editable heading, description and CTA. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px){
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+@media(max-width:600px){
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+@media(max-width:360px){
+ 
+ 
+ 
+ 
+}
+@media(prefers-reduced-motion:reduce){}
+
+
+/* v2.76.77 — White gallery stage with oval architectural imagery. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px){
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+@media(max-width:600px){
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+@media(prefers-reduced-motion:reduce){}
+
+
+/* v2.76.78 — pure white stage, quiet typography, oval image focus. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px) {
+  
+  
+  
+  
+  
+  
+  
+  
+}
+@media(max-width:600px) {
+  
+  
+  
+  
+  
+  
+  
+}
+@media(prefers-reduced-motion:reduce) {  }
+
+
+/* v2.76.79 — mobile menu starts closed; contact tools sit at the bottom of the drawer. */
+@media (max-width:900px){
+  .ma-header .ma-nav{display:none!important;}
+  .ma-header.is-open .ma-nav{display:flex!important;}
+  .ma-header .ma-header-phone{position:static!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;display:flex!important;order:9998!important;width:100%!important;box-sizing:border-box!important;margin:22px 0 0!important;padding:16px 0 12px!important;border-top:1px solid #e8e4df!important;border-right:0!important;border-bottom:0!important;transform:none!important;color:#29251f!important;font-size:13px!important;}
+  .ma-header .ma-header-right-tools{position:static!important;inset:auto!important;display:flex!important;order:9999!important;align-items:center!important;justify-content:flex-start!important;flex-wrap:wrap!important;gap:14px!important;width:100%!important;max-width:none!important;margin:0!important;padding:12px 0 18px!important;border-top:1px solid #e8e4df!important;transform:none!important;}
+  .ma-header .ma-header-right-tools .ma-header-socials{display:flex!important;flex-wrap:wrap!important;gap:10px!important;}
+  .ma-header .ma-header-right-tools .ma-header-socials a{width:36px!important;height:36px!important;flex:0 0 36px!important;}
+  .ma-header .ma-header-right-tools .ma-header-socials svg{width:16px!important;height:16px!important;}
+  .ma-header .ma-header-right-tools .ma-header-language{display:flex!important;}
+  .ma-header .ma-nav{max-height:calc(100dvh - 74px)!important;overflow-y:auto!important;}
+}
+
+/* v2.76.82 — Quiet Luxury editorial slider (reconstructed component) */
+.ma-quiet-hero{--quiet-ink:#29251f;--quiet-gold:#a98461;position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,.91fr) minmax(0,1.09fr);min-height:clamp(620px,calc(100svh - 84px),790px);overflow:hidden;background:#fff;color:var(--quiet-ink)}
+.ma-quiet-editorial{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;min-width:0;padding:clamp(46px,7.2vw,112px) clamp(28px,5.8vw,88px) 112px clamp(26px,7.2vw,110px);background:#fff}
+.ma-quiet-overline{display:flex;align-items:center;gap:13px;color:#8c765f;font:500 9px/1.5 'DM Sans',sans-serif;letter-spacing:.24em}
+.ma-quiet-overline i{display:block;width:34px;height:1px;background:#a98461}
+.ma-quiet-hero .ma-slide{position:absolute;inset:0 auto 0 0;width:100%;display:flex;align-items:center;padding:clamp(85px,10vw,145px) clamp(26px,5.8vw,88px) 110px clamp(26px,7.2vw,110px);opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .75s ease,transform .9s cubic-bezier(.2,.7,.2,1),visibility 0s linear .75s;background:none!important;color:var(--quiet-ink)}
+.ma-quiet-hero .ma-slide.is-active{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .75s ease,transform .9s cubic-bezier(.2,.7,.2,1),visibility 0s}
+.ma-quiet-hero .ma-slide.is-leaving{opacity:0;visibility:visible;transform:translateY(-12px);transition:opacity .6s ease,transform .75s ease;z-index:3}
+.ma-quiet-hero .ma-hero-content{position:relative;z-index:1;max-width:570px;padding:0!important;transform:none!important;text-shadow:none!important}
+.ma-quiet-hero .ma-kicker{display:flex;gap:10px;color:#9b7957;font:500 9px/1.6 'DM Sans',sans-serif;letter-spacing:.19em}
+.ma-quiet-hero .ma-kicker:before{width:22px;height:1px;background:#b59a7c}
+.ma-quiet-hero .ma-hero-content h1{margin:26px 0 24px;max-width:620px;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(54px,6vw,88px);font-weight:400;line-height:.98;letter-spacing:-.045em;text-transform:none;text-wrap:balance;color:#29251f}
+.ma-quiet-hero .ma-hero-content h1 em{display:block;margin-top:3px;color:#a98461;font-style:italic;font-weight:400}
+.ma-quiet-hero .ma-hero-content>p{max-width:410px;margin:0;color:#777067;font:400 clamp(13px,1.05vw,15px)/1.9 'DM Sans',sans-serif;letter-spacing:.005em}
+.ma-quiet-hero .ma-hero-content .ma-button{display:inline-flex;align-items:center;gap:28px;margin-top:30px;padding:15px 0 13px;background:transparent!important;border:0;border-bottom:1px solid #b59a7c;border-radius:0;color:#29251f;font:600 9px/1.5 'DM Sans',sans-serif;letter-spacing:.15em;box-shadow:none!important;backdrop-filter:none;transition:gap .25s ease,color .25s ease}
+.ma-quiet-hero .ma-hero-content .ma-button:hover{gap:38px;transform:none!important;color:#9b7957;background:transparent!important;box-shadow:none!important}
+.ma-quiet-hero .ma-icon-arrow{width:26px;height:1px;background:currentColor}
+.ma-quiet-hero .ma-icon-arrow:after{top:-3px;width:7px;height:7px}
+.ma-quiet-counter{position:absolute;left:clamp(26px,7.2vw,110px);top:34px;display:flex;align-items:center;gap:12px;color:#a98461;font:400 11px/1 'DM Sans',sans-serif;letter-spacing:.12em}
+.ma-quiet-counter .ma-current{font:400 24px/1 'Cormorant Garamond',Georgia,serif;color:#a98461}
+.ma-quiet-counter-line{display:block;width:42px;height:1px;background:#d8c9b9}
+.ma-quiet-total{color:#92887d;font-size:9px}
+.ma-quiet-bottom{position:absolute;left:clamp(26px,7.2vw,110px);right:clamp(20px,4vw,58px);bottom:26px;display:flex;align-items:center;justify-content:space-between;gap:15px;color:#9b9389;font:500 8px/1.5 'DM Sans',sans-serif;letter-spacing:.17em}
+.ma-quiet-bottom .ma-slider-controls{position:static;display:flex;align-items:center;gap:12px;padding:0;background:transparent;border:0;backdrop-filter:none}
+.ma-quiet-hero .ma-slider-arrow{display:grid;place-items:center;width:34px;height:34px;border:1px solid #e1d9cf;border-radius:50%;background:#fff;color:#51483e;transition:background .25s,border-color .25s,color .25s}
+.ma-quiet-hero .ma-slider-arrow:hover{background:#a98461;border-color:#a98461;color:#fff;transform:none}
+.ma-quiet-hero .ma-slider-arrow span{width:8px;height:8px;border-top:1px solid;border-right:1px solid;transform:rotate(45deg)}
+.ma-quiet-hero .ma-prev span{transform:rotate(-135deg)}
+.ma-quiet-hero .ma-dots{display:flex;align-items:center;gap:6px;padding:0 2px}
+.ma-quiet-hero .ma-dots button{width:14px;height:2px;padding:0;border:0;background:#d8cec2;cursor:pointer;transition:width .25s,background .25s}
+.ma-quiet-hero .ma-dots button.is-active{width:28px;background:#a98461}
+.ma-quiet-visual{position:relative;min-width:0;min-height:100%;margin:24px 24px 24px 0;overflow:hidden;background:#f0ece6}
+.ma-quiet-image{position:absolute;inset:0;background-image:var(--hero);background-position:center;background-size:cover;opacity:0;transform:scale(1.055);transition:opacity .85s ease,transform 7s cubic-bezier(.2,.65,.2,1);will-change:opacity,transform}
+.ma-quiet-image.is-active{opacity:1;transform:scale(1)}
+.ma-quiet-image:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.08),transparent 38%);pointer-events:none}
+.ma-image-index{position:absolute;right:20px;bottom:18px;color:rgba(255,255,255,.92);font:400 11px/1 'DM Sans',sans-serif;letter-spacing:.16em;text-shadow:0 1px 12px rgba(0,0,0,.18)}
+.ma-quiet-vertical-label{position:absolute;right:10px;top:50%;z-index:2;writing-mode:vertical-rl;transform:translateY(-50%);color:#9d8e7d;font:500 7px/1 'DM Sans',sans-serif;letter-spacing:.24em}
+@media(max-width:900px){.ma-quiet-hero{grid-template-columns:1fr;min-height:0;overflow:visible}.ma-quiet-visual{grid-row:1;margin:16px 16px 0;min-height:0;height:clamp(270px,55vw,440px)}.ma-quiet-editorial{grid-row:2;min-height:420px;padding:56px 26px 95px}.ma-quiet-hero .ma-slide{padding:72px 26px 94px;align-items:center}.ma-quiet-counter{left:26px;top:20px}.ma-quiet-hero .ma-hero-content h1{font-size:clamp(49px,10vw,72px);margin:22px 0 18px}.ma-quiet-hero .ma-hero-content>p{font-size:13px;max-width:520px}.ma-quiet-bottom{left:26px;right:22px;bottom:20px}.ma-quiet-vertical-label{right:8px}.ma-quiet-hero .ma-slider-arrow{width:31px;height:31px}}
+@media(max-width:480px){.ma-quiet-visual{height:280px;margin:10px 10px 0}.ma-quiet-editorial{min-height:410px;padding:49px 20px 88px}.ma-quiet-hero .ma-slide{padding:66px 20px 86px}.ma-quiet-hero .ma-hero-content h1{font-size:clamp(43px,11.5vw,58px);line-height:1}.ma-quiet-hero .ma-kicker{font-size:8px;letter-spacing:.13em}.ma-quiet-hero .ma-hero-content>p{font-size:12px;line-height:1.8}.ma-quiet-hero .ma-hero-content .ma-button{font-size:8px;gap:20px}.ma-quiet-bottom{left:20px;right:16px;bottom:17px;letter-spacing:.1em}.ma-quiet-bottom>span{font-size:7px}.ma-quiet-bottom .ma-slider-controls{gap:7px}.ma-quiet-hero .ma-dots{gap:4px}.ma-quiet-hero .ma-dots button{width:9px}.ma-quiet-hero .ma-dots button.is-active{width:20px}.ma-quiet-hero .ma-slider-arrow{width:28px;height:28px}}
+@media(prefers-reduced-motion:reduce){.ma-quiet-hero .ma-slide,.ma-quiet-image,.ma-quiet-hero .ma-slider-arrow,.ma-quiet-hero .ma-dots button{transition:none!important}.ma-quiet-image,.ma-quiet-image.is-active{transform:none!important}}
+
+
+/* v2.76.83 — cohesive white editorial system for İç Mimarlık & Dekorasyon.
+   This is the theme's final visual layer: the full site, not only the hero, follows one light palette. */
+:root{--gold:#a9825c;--ink:#29251f;--navy:#29251f;--blue:#76624f;--paper:#ffffff;--muted:#777067;--line:#e8e1d8;--white:#ffffff;--radius:0;--shadow:0 18px 48px rgba(41,37,31,.07)}
+html,body{background:#fff!important;color:var(--ink)}
+body{font-family:"DM Sans",Arial,sans-serif}
+.ma-header{background:rgba(255,255,255,.97)!important;color:var(--ink)!important;border-bottom:1px solid #e9e3dc!important;box-shadow:0 4px 24px rgba(41,37,31,.025)!important;backdrop-filter:blur(16px)}
+.ma-header .ma-nav,.ma-header .ma-menu-link,.ma-header .ma-logo,.ma-header .ma-header-phone,.ma-header .ma-header-right-tools,.ma-header .ma-socials a,.ma-header .ma-language-trigger{color:var(--ink)!important}
+.ma-header .ma-menu-link:after{background:var(--gold)!important}
+.ma-header .ma-toggle{color:var(--ink)!important;border-color:var(--line)!important;background:#fff!important}
+.ma-header .ma-header-cta{background:var(--ink)!important;color:#fff!important;border:1px solid var(--ink)!important}
+.ma-header .ma-header-cta:hover{background:var(--gold)!important;border-color:var(--gold)!important;color:#fff!important}
+.ma-intro,.ma-infrastructure,.ma-services,.ma-projects,.ma-new-projects,.ma-contact-detail,.ma-statement,.ma-separated-page-content,.ma-map-wrap{background:#fff!important;color:var(--ink)!important}
+.ma-intro,.ma-infrastructure,.ma-projects,.ma-new-projects,.ma-contact-detail,.ma-statement{border-color:var(--line)!important}
+.ma-intro h2,.ma-infrastructure h2,.ma-section-head h2,.ma-contact-detail h2,.ma-statement h2,.ma-footer-brand h2{color:var(--ink)!important}
+.ma-intro p,.ma-infrastructure p,.ma-contact-detail p,.ma-statement p{color:var(--muted)!important}
+.ma-kicker,.ma-section-no,.ma-project-status,.ma-footer-label{color:var(--gold)!important}
+.ma-services{border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+.ma-service-list,.ma-service-grid{border-color:var(--line)!important}
+.ma-service-list article,.ma-service-card{background:#fff!important;color:var(--ink)!important;border-color:var(--line)!important;transition:background .25s ease,border-color .25s ease,transform .25s ease}
+.ma-service-list article:hover,.ma-service-card:hover{background:#fcfaf7!important;border-color:#d8c5b0!important}
+.ma-service-list h3,.ma-service-card h3,.ma-service-card .ma-service-number{color:var(--ink)!important}
+.ma-service-list p,.ma-service-card p{color:var(--muted)!important}
+.ma-service-arrow{border-color:#d8c9b8!important}
+.ma-projects{background:#fff!important}
+.ma-project-card,.ma-new-project{background:#fff!important;border:1px solid var(--line)!important;box-shadow:none!important}
+.ma-project-card img,.ma-new-project-image img{background:#f7f4ef}
+.ma-gallery-main{background:#f4f0e9!important}
+.ma-gallery-caption,.ma-new-project-overlay{background:linear-gradient(0deg,rgba(25,22,18,.76),rgba(25,22,18,0))!important}
+.ma-contact-detail{background:#fff!important}
+.ma-contact-form{background:#fff!important;border:1px solid var(--line)!important;box-shadow:0 18px 50px rgba(41,37,31,.055)!important}
+.ma-contact-form label{color:var(--ink)!important}
+.ma-contact-form input,.ma-contact-form textarea,.ma-contact-form select{background:#fff!important;color:var(--ink)!important;border:0!important;border-bottom:1px solid #ded5ca!important}
+.ma-contact-form input:focus,.ma-contact-form textarea:focus,.ma-contact-form select:focus{border-bottom-color:var(--gold)!important;box-shadow:0 1px 0 var(--gold)!important}
+.ma-button,.ma-form-submit{background:var(--ink)!important;color:#fff!important;border:1px solid var(--ink)!important;box-shadow:none!important}
+.ma-button:hover,.ma-form-submit:hover{background:var(--gold)!important;border-color:var(--gold)!important;color:#fff!important}
+.ma-text-link{color:var(--ink)!important;border-color:#cbb59e!important}
+.ma-footer{background:#fff!important;color:var(--ink)!important;border-top:1px solid var(--line)!important}
+.ma-footer-brand{border-bottom:1px solid var(--line)!important}
+.ma-footer a,.ma-footer-contact>a,.ma-footer-contact p,.ma-footer-sitemap a,.ma-footer-socials a{color:#655d54!important}
+.ma-footer a:hover,.ma-footer-socials a:hover,.ma-footer-sitemap a:hover{color:var(--gold)!important}
+.ma-footer-label{color:var(--gold)!important}
+.ma-copy{color:#81796f!important;border-top:1px solid var(--line)!important}
+.ma-back-top{background:#fff!important;color:var(--ink)!important;border:1px solid var(--line)!important}
+.ma-whatsapp,.ma-header-whatsapp{box-shadow:0 5px 18px rgba(41,37,31,.12)!important}
+.ma-quiet-hero{background:#fff!important;color:var(--ink)!important}
+.ma-quiet-editorial{background:#fff!important}
+.ma-quiet-hero .ma-hero-content h1{color:var(--ink)!important}
+.ma-quiet-hero .ma-hero-content h1 em{color:var(--gold)!important}
+.ma-quiet-hero .ma-hero-content>p{color:var(--muted)!important}
+.ma-quiet-hero .ma-hero-content .ma-button{background:transparent!important;color:var(--ink)!important;border:0!important;border-bottom:1px solid #cbb59e!important}
+.ma-quiet-hero .ma-hero-content .ma-button:hover{color:var(--gold)!important;background:transparent!important}
+.ma-quiet-counter,.ma-quiet-bottom,.ma-quiet-vertical-label{color:#7c7369!important;text-shadow:none!important}
+.ma-quiet-counter-line{background:#e7dfd5!important}
+.ma-quiet-counter-line span{background:var(--gold)!important}
+.ma-quiet-hero .ma-slider-arrow{background:#fff!important;color:var(--ink)!important;border:1px solid #e5ddd3!important;box-shadow:none!important}
+.ma-quiet-hero .ma-slider-arrow:hover{background:var(--ink)!important;color:#fff!important;border-color:var(--ink)!important}
+.ma-quiet-hero .ma-dots button{background:#d9d0c5!important}
+.ma-quiet-hero .ma-dots button.is-active{background:var(--gold)!important}
+.ma-quiet-thumb{border:1px solid #e8e1d8!important}
+.ma-map-head{background:#fff!important;color:var(--ink)!important}
+.ma-reveal{color:inherit}
+::selection{background:#ead9c6;color:#29251f}
+@media(max-width:900px){.ma-header{background:rgba(255,255,255,.985)!important}.ma-header.is-open{box-shadow:0 14px 30px rgba(41,37,31,.08)!important}.ma-header.is-open .ma-nav{background:#fff!important;border-top:1px solid var(--line)!important}.ma-header .ma-nav .ma-menu-link{color:var(--ink)!important}.ma-header .ma-nav .ma-submenu{background:#fff!important;border-color:var(--line)!important}.ma-header .ma-nav .ma-submenu a{color:var(--ink)!important}.ma-header .ma-header-phone,.ma-header .ma-header-right-tools{border-color:var(--line)!important}.ma-service-card{background:#fff!important}.ma-quiet-editorial{background:#fff!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ma-service-list article,.ma-service-card,.ma-project-card img{transition:none!important}}
+
+
+/* v2.76.84 — unified white editorial finish; scoped to Interior Architecture theme */
+:root{--paper:#fff;--white:#fff;--line:#e8e1d8;--muted:#746b62;--ink:#29251f;--gold:#a9825c;--shadow:0 12px 34px rgba(41,37,31,.055)}
+html,body{background:#fff!important;color:var(--ink)}
+.ma-header{background:rgba(255,255,255,.98)!important;color:var(--ink)!important;border-bottom:1px solid #e8e1d8!important;box-shadow:none!important;gap:clamp(16px,2.1vw,30px)!important}
+.ma-header .ma-logo{margin-right:0!important;flex:0 0 auto!important}
+.ma-header .ma-nav{margin-left:clamp(12px,1.8vw,26px)!important;gap:clamp(9px,1.35vw,21px)!important}
+.ma-header .ma-nav .ma-menu-link{border-radius:999px!important;padding:12px 15px!important;background:transparent!important;transition:background .2s,color .2s!important}
+.ma-header .ma-nav .ma-menu-link:hover,.ma-header .ma-nav .ma-menu-item:focus-within>.ma-menu-link{background:#f4eee7!important;color:#8f6848!important}
+.ma-header .ma-nav .ma-menu-link:after{display:none!important}
+.ma-header .ma-nav .ma-menu-item{border-color:#eee8e1!important}
+.ma-header .ma-nav .ma-submenu{border-radius:16px!important;overflow:hidden!important;box-shadow:0 16px 35px rgba(41,37,31,.09)!important;background:#fff!important}
+.ma-header .ma-header-phone,.ma-header .ma-header-email{display:inline-flex!important;align-items:center!important;gap:7px!important;color:#51483e!important;text-decoration:none!important;font:500 11px/1.3 "Manrope",Arial,sans-serif!important;white-space:nowrap!important;border:0!important;background:transparent!important;box-shadow:none!important}
+.ma-header .ma-header-phone svg,.ma-header .ma-header-email svg{width:15px!important;height:15px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.5!important}
+.ma-header .ma-header-email{margin-left:8px!important;padding-left:14px!important;border-left:1px solid #e8e1d8!important}
+.ma-header .ma-socials,.ma-header .ma-header-socials,.ma-header .ma-header-right-tools,.ma-header .ma-socials a{box-shadow:none!important;filter:none!important;text-shadow:none!important}
+.ma-header .ma-socials a{background:#fff!important;border:1px solid #e8e1d8!important;border-radius:50%!important;color:#655546!important}
+.ma-header .ma-socials a:hover{background:#f4eee7!important;border-color:#cdb79f!important}
+.ma-header .ma-language-trigger{box-shadow:none!important;background:#fff!important;border-color:#e8e1d8!important;color:var(--ink)!important}
+.ma-header .ma-header-cta,.ma-header .ma-toggle{border-radius:999px!important;box-shadow:none!important}
+.ma-hero,.ma-quiet-hero,.ma-quiet-editorial,.ma-intro,.ma-infrastructure,.ma-services,.ma-projects,.ma-gallery,.ma-contact,.ma-contact-detail,.ma-map-wrap,.ma-section,.ma-section-head,.ma-service-card,.ma-project-card,.ma-quiet-thumb{background-color:#fff!important}
+.ma-section,.ma-intro,.ma-infrastructure,.ma-services,.ma-projects,.ma-gallery,.ma-contact,.ma-contact-detail,.ma-map-wrap,.ma-quiet-editorial{border-bottom:1px solid #e8e1d8!important}
+.ma-section-head,.ma-contact-detail-head{border-bottom:1px solid #e8e1d8!important;padding-bottom:22px!important}
+.ma-service-list{border-color:#e8e1d8!important}.ma-service-list article,.ma-service-card,.ma-project-card,.ma-contact-form{box-shadow:none!important}
+.ma-service-list article{border-color:#e8e1d8!important;background:#fff!important}
+.ma-project-card{border:1px solid #eee8e1!important;background:#fff!important}
+.ma-contact-form input,.ma-contact-form textarea,.ma-contact-form select{background:#fff!important;border-color:#e4ddd4!important;box-shadow:none!important}
+.ma-map-head{background:#fff!important;color:var(--ink)!important}
+.ma-footer{background:#f4eee7!important;color:#29251f!important;border-top:1px solid #e1d4c5!important}
+.ma-footer-brand{border-bottom:1px solid #dfd2c4!important}
+.ma-footer-columns{border-bottom:1px solid #dfd2c4!important}
+.ma-footer a,.ma-footer .ma-footer-label,.ma-footer p,.ma-footer h2{color:#29251f!important}
+.ma-footer .ma-kicker{color:#8f6848!important}
+.ma-footer a:hover{color:#8f6848!important}
+.ma-footer-bottom{border-top:1px solid #dfd2c4!important;color:#6f6256!important}
+.ma-floating-call{box-shadow:none!important}
+@media(max-width:900px){
+ .ma-header{position:sticky!important;min-height:88px!important;display:flex!important;justify-content:center!important;padding:10px 14px!important;background:#fff!important;gap:0!important}
+ .ma-header .ma-logo{position:absolute!important;left:50%!important;top:10px!important;transform:translateX(-50%)!important;margin:0!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:2px!important;width:max-content!important;max-width:calc(100% - 120px)!important;text-align:center!important}
+ .ma-header .ma-coolhunter-mark{margin:0 auto!important;max-height:26px!important;width:auto!important;max-width:38px!important;object-fit:contain!important}
+ .ma-header .ma-logo-subtitle{margin:0!important;text-align:center!important;letter-spacing:.12em!important;text-indent:0!important;font-size:8px!important;line-height:1.3!important;white-space:normal!important}
+ .ma-header .ma-toggle{position:absolute!important;right:14px!important;top:22px!important;order:initial!important;margin:0!important;border:1px solid #e8e1d8!important;background:#fff!important;color:#29251f!important}
+ .ma-header .ma-nav{top:100%!important;left:0!important;right:0!important;margin:0!important;padding:12px 18px 20px!important;background:#fff!important;border-top:1px solid #e8e1d8!important}
+ .ma-header .ma-nav .ma-menu-link{padding:13px 14px!important;border-radius:999px!important}
+ .ma-header .ma-header-phone{position:absolute!important;left:14px!important;top:24px!important;bottom:auto!important;padding:0!important}
+ .ma-header .ma-header-phone span{display:none!important}
+ .ma-header .ma-header-email{display:none!important}
+ .ma-header .ma-header-right-tools{right:66px!important;top:25px!important;max-width:none!important;gap:8px!important}
+ .ma-header .ma-header-right-tools .ma-header-socials{display:none!important}
+ .ma-header .ma-header-cta{display:none!important}
+ .ma-footer{padding-top:42px!important}
+}
+@media(max-width:420px){.ma-header .ma-logo-subtitle{font-size:7px!important;letter-spacing:.09em!important}.ma-header .ma-coolhunter-mark{max-height:22px!important}}
+
+
+/* v2.76.86 — add breathing room below the mobile brand name */
+.ma-quiet-hero .ma-quiet-overline{display:none!important}
+@media(min-width:901px){
+ .ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{margin-top:10px!important;transform:translateX(30px)!important}
+}
+@media(max-width:900px){
+ .ma-header .ma-logo.ma-editorial-logo .ma-logo-subtitle{margin-top:10px!important;transform:none!important}
+}
+
+
+/* v2.76.88 — restore white interior-design palette and keep header tools usable on mobile */
+/* Desktop: keep phone and email in the header flow, beside each other, not below the header. */
+.ma-header{position:relative!important;align-items:center!important;}
+.ma-header .ma-header-contact-inline{position:static!important;inset:auto!important;order:initial!important;display:flex!important;align-items:center!important;gap:0!important;flex:0 0 auto!important;margin:0!important;padding:0!important;transform:none!important;white-space:nowrap!important;}
+.ma-header .ma-header-contact-inline .ma-header-phone,
+.ma-header .ma-header-contact-inline .ma-header-email{position:static!important;inset:auto!important;display:inline-flex!important;align-items:center!important;gap:7px!important;margin:0!important;padding:0!important;transform:none!important;white-space:nowrap!important;}
+.ma-header .ma-header-contact-inline .ma-header-email{margin-left:12px!important;padding-left:12px!important;border-left:1px solid #e8e1d8!important;}
+.ma-header .ma-header-contact-inline .ma-header-phone svg,
+.ma-header .ma-header-contact-inline .ma-header-email svg{width:15px!important;height:15px!important;flex:0 0 15px!important;}
+/* Keep the entire interior design theme light; only the copyright strip gets its own warm accent. */
+.ma-footer{background:#f4eee7!important;color:#29251f!important;border-top:1px solid #e1d4c5!important;box-shadow:none!important;}
+.ma-footer-brand,.ma-footer-columns{border-bottom:1px solid #dfd2c4!important;}
+.ma-footer a,.ma-footer-contact>a,.ma-footer-contact p,.ma-footer-sitemap a,.ma-footer-socials a,.ma-footer h2{color:#29251f!important;}
+.ma-footer .ma-footer-label,.ma-footer .ma-kicker{color:#8f6848!important;}
+.ma-footer-bottom{border-top:1px solid #dfd2c4!important;color:#6f6256!important;}
+.ma-copy{background:#f4eee7!important;color:#655d54!important;border-top:1px solid #dfd2c4!important;}
+.ma-copy a{color:#29251f!important;}
+/* Floating contact bubbles are intentionally absent; retain the header WhatsApp icon. */
+.ma-floating-call,.ma-whatsapp{display:none!important;}
+@media(max-width:900px){
+  .ma-header{position:sticky!important;display:flex!important;flex-direction:row!important;justify-content:center!important;align-items:center!important;min-height:88px!important;padding:10px 14px!important;gap:0!important;}
+  .ma-header .ma-header-contact-inline{position:absolute!important;left:14px!important;top:24px!important;right:auto!important;display:flex!important;align-items:center!important;gap:0!important;margin:0!important;padding:0!important;z-index:4!important;}
+  .ma-header .ma-header-contact-inline .ma-header-phone{position:static!important;display:inline-flex!important;margin:0!important;padding:0!important;}
+  .ma-header .ma-header-contact-inline .ma-header-phone span{display:none!important;}
+  .ma-header .ma-header-contact-inline .ma-header-email{display:none!important;}
+  .ma-header .ma-header-contact-inline .ma-header-phone svg{display:block!important;width:19px!important;height:19px!important;}
+  .ma-header .ma-logo{position:absolute!important;left:50%!important;top:10px!important;transform:translateX(-50%)!important;margin:0!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:2px!important;width:max-content!important;max-width:calc(100% - 120px)!important;text-align:center!important;}
+  .ma-header .ma-toggle{position:absolute!important;right:14px!important;top:22px!important;z-index:5!important;margin:0!important;}
+  .ma-header .ma-nav{display:none!important;position:absolute!important;top:100%!important;left:0!important;right:0!important;width:100%!important;box-sizing:border-box!important;margin:0!important;padding:12px 18px 18px!important;background:#fff!important;border-top:1px solid #e8e1d8!important;max-height:calc(100dvh - 88px)!important;overflow-y:auto!important;}
+  .ma-header.is-open .ma-nav{display:flex!important;}
+  /* When the hamburger is open, expand the header and place the social/language/contact row below the menu links. */
+  .ma-header.is-open{height:auto!important;min-height:88px!important;flex-wrap:wrap!important;align-items:flex-start!important;padding-bottom:0!important;}
+  .ma-header.is-open .ma-nav{position:relative!important;top:auto!important;left:auto!important;right:auto!important;order:10!important;flex:0 0 100%!important;width:100%!important;margin-top:78px!important;max-height:calc(100dvh - 166px)!important;}
+  .ma-header .ma-header-right-tools{display:flex!important;position:absolute!important;left:-9999px!important;top:auto!important;right:auto!important;}
+  .ma-header.is-open .ma-header-right-tools{position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;order:11!important;display:flex!important;flex:0 0 100%!important;width:100%!important;max-width:none!important;box-sizing:border-box!important;align-items:center!important;justify-content:flex-start!important;flex-wrap:wrap!important;gap:12px!important;margin:0!important;padding:14px 18px 20px!important;background:#fff!important;border-top:1px solid #e8e1d8!important;transform:none!important;}
+  .ma-header.is-open .ma-header-right-tools .ma-header-socials{display:flex!important;align-items:center!important;gap:10px!important;flex-wrap:wrap!important;}
+  .ma-header.is-open .ma-header-right-tools .ma-header-socials a{display:flex!important;align-items:center!important;justify-content:center!important;width:36px!important;height:36px!important;flex:0 0 36px!important;box-sizing:border-box!important;}
+  .ma-header.is-open .ma-header-right-tools .ma-header-socials svg{display:block!important;width:16px!important;height:16px!important;}
+  .ma-header.is-open .ma-header-right-tools .ma-header-whatsapp{display:flex!important;align-items:center!important;justify-content:center!important;width:36px!important;height:36px!important;flex:0 0 36px!important;border:1px solid #e8e1d8!important;border-radius:50%!important;background:#fff!important;color:#655546!important;}
+  .ma-header.is-open .ma-header-right-tools .ma-header-whatsapp svg{display:block!important;width:17px!important;height:17px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.5!important;}
+  .ma-header.is-open .ma-header-right-tools .ma-header-language{display:flex!important;}
+  .ma-header .ma-header-cta{display:none!important;}
+  .ma-footer{padding-top:42px!important;}
+}
+
+
+/* v2.76.89 — restore phone to its original header position; remove email from this theme header */
+.ma-header .ma-header-email{display:none!important;}
+.ma-header .ma-header-contact-inline{display:contents!important;}
+@media(max-width:900px){
+ .ma-header>.ma-header-phone{position:absolute!important;left:14px!important;top:24px!important;right:auto!important;bottom:auto!important;display:inline-flex!important;align-items:center!important;margin:0!important;padding:0!important;transform:none!important;z-index:4!important;}
+ .ma-header>.ma-header-phone span{display:none!important;}
+ .ma-header>.ma-header-phone svg{display:block!important;width:19px!important;height:19px!important;}
+}
+
+
+/* v2.76.90: email sits beside the existing phone without repositioning it */
+.ma-header .ma-header-email{display:inline-flex;align-items:center;gap:7px;margin-left:12px;color:inherit;text-decoration:none;font-size:12px;line-height:1.3;white-space:nowrap;vertical-align:middle;}
+.ma-header .ma-header-email svg{width:15px;height:15px;flex:0 0 15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+@media(max-width:767px){.ma-header .ma-header-email{display:none!important;}}
+
+
+/* v2.76.91: mobile header contact stack; keep phone in its corner and email directly beneath it. */
+@media(max-width:900px){
+  .ma-header>.ma-header-phone{position:absolute!important;left:14px!important;top:20px!important;right:auto!important;bottom:auto!important;display:inline-flex!important;align-items:center!important;margin:0!important;padding:0!important;transform:none!important;z-index:20!important;}
+  .ma-header>.ma-header-phone span{display:none!important;}
+  .ma-header>.ma-header-phone svg{display:block!important;width:19px!important;height:19px!important;}
+  .ma-header>.ma-header-email{position:absolute!important;left:14px!important;top:45px!important;right:auto!important;bottom:auto!important;display:inline-flex!important;align-items:center!important;gap:5px!important;margin:0!important;padding:0!important;max-width:calc(100vw - 105px)!important;overflow:hidden!important;white-space:nowrap!important;text-overflow:ellipsis!important;font-size:10px!important;line-height:14px!important;z-index:20!important;color:#655546!important;}
+  .ma-header>.ma-header-email span{display:block!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;}
+  .ma-header>.ma-header-email svg{display:block!important;width:12px!important;height:12px!important;flex:0 0 12px!important;}
+  .ma-header.is-open .ma-nav{margin-top:88px!important;max-height:calc(100dvh - 176px)!important;}
+}
+@media(max-width:767px){.ma-header>.ma-header-email{display:inline-flex!important;}}
+
+
+/* v2.76.92: section 05/06 dividers and near-white contact/copyright surfaces. */
+.ma-statement{border-bottom:1px solid #e8e8e5!important;padding-bottom:clamp(44px,6vw,84px)!important}
+.ma-new-projects{border-bottom:1px solid #e8e8e5!important;padding-bottom:clamp(44px,6vw,84px)!important}
+.ma-contact-detail{background:#f7f7f5!important}
+.ma-contact-detail .ma-contact-form{background:#fbfbfa!important}
+.ma-copy,.ma-copy-protected{background:#f7f7f5!important;color:#6d675f!important;border-top:1px solid #e8e8e5!important}
+.ma-copy a,.ma-copy-protected a{color:#6d675f!important}
+
+/* v2.76.93: show email beside the unchanged phone on desktop; keep mobile stack rules. */
+@media(min-width:901px){.ma-header>.ma-header-email{display:inline-flex!important;position:relative!important;left:auto!important;top:auto!important;right:auto!important;bottom:auto!important;align-items:center!important;gap:7px!important;margin:0 0 0 12px!important;padding:0!important;max-width:none!important;overflow:visible!important;z-index:4!important;color:inherit!important;text-decoration:none!important;font-size:12px!important;line-height:1.3!important;white-space:nowrap!important;vertical-align:middle!important}.ma-header>.ma-header-email span{display:inline!important;overflow:visible!important;text-overflow:clip!important;white-space:nowrap!important}.ma-header>.ma-header-email svg{display:block!important;width:15px!important;height:15px!important;flex:0 0 15px!important}}

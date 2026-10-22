@@ -1,0 +1,327 @@
+{
+  "id": "ic-mimarlik-dekorasyon",
+  "name": "İç Mimarlık & Dekorasyon",
+  "sector": "İç Mimarlık & Dekorasyon",
+  "description": "Konut, ofis ve ticari mekânlar için özgün iç mimari, dekorasyon ve anahtar teslim uygulama teması.",
+  "version": "1.0.0",
+  "author": "Tasarım SK",
+  "preview": "assets/preview.svg",
+  "schema_version": "1.0",
+  "capabilities": [
+    "theme_settings",
+    "hero_slider",
+    "sections",
+    "gallery",
+    "colors",
+    "seo",
+    "content_blocks",
+    "section_order"
+  ],
+  "starter_pages": [],
+  "starter_menu": [
+    {
+      "title": "Ana Sayfa",
+      "url": "/"
+    },
+    {
+      "title": "Stüdyo",
+      "url": "#studyo"
+    },
+    {
+      "title": "Hizmetler",
+      "url": "#hizmetler"
+    },
+    {
+      "title": "Projeler",
+      "url": "#projeler"
+    },
+    {
+      "title": "Görüşme Talebi",
+      "url": "#iletisim-formu"
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "content",
+      "label": "Marka Girişi",
+      "active": null,
+      "fields": [
+        "active",
+        "kicker",
+        "title",
+        "description"
+      ],
+      "orderable": null,
+      "default_order": null
+    },
+    {
+      "id": "infrastructure",
+      "type": "cards",
+      "label": "Tasarım Yaklaşımı",
+      "active": null,
+      "fields": [
+        "active",
+        "kicker",
+        "title",
+        "description",
+        "items"
+      ],
+      "orderable": null,
+      "default_order": null
+    },
+    {
+      "id": "services",
+      "type": "cards",
+      "label": "Tasarım Hizmetleri",
+      "active": null,
+      "fields": [
+        "active",
+        "title",
+        "items"
+      ],
+      "orderable": null,
+      "default_order": null
+    },
+    {
+      "id": "projects",
+      "type": "gallery",
+      "label": "Seçili Projeler",
+      "active": null,
+      "fields": [
+        "active",
+        "title"
+      ],
+      "orderable": null,
+      "default_order": null
+    },
+    {
+      "id": "statement",
+      "type": "content",
+      "label": "Tasarım Felsefesi",
+      "active": null,
+      "fields": [
+        "active",
+        "title",
+        "description"
+      ],
+      "orderable": null,
+      "default_order": null
+    },
+    {
+      "id": "new_projects",
+      "type": "gallery",
+      "label": "Uygulama Süreci",
+      "active": null,
+      "fields": [
+        "active",
+        "title"
+      ],
+      "orderable": null,
+      "default_order": null
+    },
+    {
+      "id": "contact",
+      "type": "cta",
+      "label": "Görüşme Talebi",
+      "active": null,
+      "fields": [
+        "active",
+        "title",
+        "description"
+      ],
+      "orderable": null,
+      "default_order": null
+    }
+  ],
+  "settings_schema": {
+    "general": {
+      "label": "Genel Ayarlar",
+      "fields": [
+        "site_name",
+        "site_slogan",
+        "site_description",
+        "site_logo",
+        "contact_phone",
+        "contact_email",
+        "contact_address",
+        "whatsapp",
+        "instagram",
+        "seo_title",
+        "seo_description",
+        "primary_color",
+        "secondary_color"
+      ]
+    },
+    "hero": {
+      "label": "Hero",
+      "repeatable": null,
+      "max_items": null,
+      "fields": [
+        "active",
+        "image",
+        "eyebrow",
+        "title",
+        "highlight",
+        "description",
+        "button_text",
+        "button_url"
+      ],
+      "item_fields": [
+        {
+          "id": "active",
+          "label": "Aktif",
+          "type": "toggle",
+          "default": null
+        },
+        {
+          "id": "image",
+          "label": "Görsel",
+          "type": "image",
+          "default": ""
+        },
+        {
+          "id": "eyebrow",
+          "label": "Üst Başlık",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "title",
+          "label": "Başlık",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "highlight",
+          "label": "Vurgu",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "description",
+          "label": "Açıklama",
+          "type": "textarea",
+          "default": ""
+        },
+        {
+          "id": "button_text",
+          "label": "Buton",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "button_url",
+          "label": "URL",
+          "type": "url",
+          "default": ""
+        }
+      ]
+    },
+    "gallery": {
+      "label": "Uygulamalar Galerisi",
+      "repeatable": null,
+      "max_items": null,
+      "fields": [
+        "active",
+        "image",
+        "alt"
+      ],
+      "item_fields": [
+        {
+          "id": "active",
+          "label": "Aktif",
+          "type": "toggle",
+          "default": null
+        },
+        {
+          "id": "image",
+          "label": "Görsel",
+          "type": "image",
+          "default": ""
+        },
+        {
+          "id": "alt",
+          "label": "Alt Metni",
+          "type": "text",
+          "default": ""
+        }
+      ]
+    }
+  },
+  "field_definitions": {
+    "site_name": {
+      "label": "Site Adı",
+      "type": "text",
+      "default": "İç Mimarlık Stüdyosu"
+    },
+    "site_slogan": {
+      "label": "Slogan",
+      "type": "text",
+      "default": "İÇ MİMARLIK · DEKORASYON · UYGULAMA"
+    },
+    "site_description": {
+      "label": "Site Açıklaması",
+      "type": "textarea",
+      "default": "Konut, ofis ve ticari mekânlar için özgün iç mimari ve dekorasyon."
+    },
+    "site_logo": {
+      "label": "Logo",
+      "type": "image",
+      "default": ""
+    },
+    "contact_phone": {
+      "label": "Telefon",
+      "type": "text",
+      "default": "+90 212 000 00 00"
+    },
+    "contact_email": {
+      "label": "E-posta",
+      "type": "email",
+      "default": "merhaba@icmimarlikstudio.com"
+    },
+    "contact_address": {
+      "label": "Adres",
+      "type": "textarea",
+      "default": "İstanbul, Türkiye"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "type": "text",
+      "default": ""
+    },
+    "instagram": {
+      "label": "Instagram",
+      "type": "url",
+      "default": ""
+    },
+    "seo_title": {
+      "label": "SEO Başlığı",
+      "type": "text",
+      "default": "İç Mimarlık & Dekorasyon | İç Mimarlık Stüdyosu"
+    },
+    "seo_description": {
+      "label": "SEO Açıklaması",
+      "type": "textarea",
+      "default": "Konut iç mimarlığı, ofis tasarımı, dekorasyon ve anahtar teslim uygulama."
+    },
+    "primary_color": {
+      "label": "Ana Renk",
+      "type": "color",
+      "default": "#b68b63"
+    },
+    "secondary_color": {
+      "label": "İkincil Renk",
+      "type": "color",
+      "default": "#29251f"
+    }
+  },
+  "protected_branding": {
+    "copyright": {
+      "locked": null,
+      "permission": "theme",
+      "editable": null,
+      "label": "Tasarım SK Copyright"
+    }
+  }
+}
